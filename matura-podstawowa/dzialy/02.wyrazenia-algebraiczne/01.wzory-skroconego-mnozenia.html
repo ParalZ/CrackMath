@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>II. Wyrażenia algebraiczne</title>
+  <link rel="stylesheet" href="/matura-podstawowa/style.css" />
+</head>
+
+
+<body>
+  <div class="dashboard">
+    <a href="/matura-podstawowa/index.html">Matura Podstawowa 2026</a>
+  </div>
+  <h1 class="center">Wzory skróconego mnożenia</h1>
+
+  <div id="questions"></div>
+
+  <div class="footer-bar">
+    <a href="javascript:history.back()">Poprzednia Strona</a>
+    <a href="/matura-podstawowa/to_be_developed.html" style="margin-left:auto;">Następna Strona</a>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js">
+    //konfetti
+  </script>
+
+  <script src="/matura-podstawowa/script.js"></script>
+  <script>
+    addOpenQuestion(
+      "questions",                                          //containerId
+      "Zadanie 1: Liczba $(5-2\\sqrt{3})^2$ jest równa:",   //questionText
+      "37-20*sqrt(3)",                                 //mathJax answer to evaluate
+      "37-20\\sqrt{3}",                                   //latex Answer to show when done correctly
+      "result1",                                            //resultId
+      "answer1",
+      "to sie robi tak essssa",
+      "solution1"
+    );
+    addOpenQuestion(
+      "questions",                                          //containerId
+      "Zadanie 2: Liczba $(2\\sqrt{8}-3\\sqrt{2})^2$ jest równa:",      //questionText
+      "2",                                                  //mathJax answer to evaluate
+      "2",                                                  //latex Answer to show when done correctly
+      "result2",                                            //resultId
+      "answer2",
+      "",
+      "solution2"                                             
+    );
+    addMultipleChoiceQuestion(
+      "questions",              //containerId
+      "Zadanie 3: Ile to $2+3$",  //questionText
+      "A. 5",                   //latexAnswer
+      "result3",                //resultId
+      "5",                      //A
+      "20",                     //B
+      "54",                     //C
+      "72",                     //D
+      "A"                       //correct Answer/letter
+
+    );
+  </script>
+  <script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$']]
+    }
+  };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>II. Wyrażenia algebraiczne</title>
+  <link rel="stylesheet" href="/math-app/matura-podstawowa/style.css" />
+</head>
+
+
+<body>
+  <!--Dashboard-->
+  <div class="dashboard">
+    <a href="/matura-podstawowa/index.html">Matura Podstawowa 2026</a>
+    <a href="#zadania-section" class="jump-btn">Przejdź do sekcji "Zadania"</a>
+  </div>
+  <!--footer-bar-->
+  <div class="footer-bar">
+    <a href="javascript:history.back()">Poprzednia Strona</a>
+    <a href="/matura-podstawowa/to_be_developed.html">Następna Strona</a>
+  </div>
+
+  <h1 class="center">Równania liniowe</h1>
+  <!--section1-->
+  <div class="section">
+    <hr>
+    <h2>Definicja 1.1</h2>
+    <p>Równaniem liniowym nazywamy równanie które może zostać sprowadzone do postaci $ax +b = 0$. (Na przykład: $3x +5 = 0$)</p>
+    <h2>Przykład 1.2</h2>
+    <p>
+    Przykładowe równania liniowe 
+    $$2x + 7 = 3$$
+    $$3x - 8 = 10$$
+    $$3(x-1) = 2(x+2)$$
+    $$\frac{x-1}{3} - 3 = \frac{2(x-2)}{5} + 7$$
+    <div class="black-square"></div>
+    </p>
+    <div id="questions_1"></div>
+  </div>
+  <!--UWAGA1-->
+  <div class="uwaga">
+    <p><span class="bold-word">Uwaga!</span></p>
+    <p>Od teraz równanie liniowe sprowadzone do postaci $ax +b = 0 $ będziemy nazywać <span class="bold-word">postacią końcową równania.</span></p>
+  </div>
+  <!--section2-->
+  <div class="section">
+    <h2>Definicja 1.3</h2>
+    <p>Równanie liniowe nazywamy sprzecznym gdy po sprowadzeniu go do postaci końcowej $a = 0$ i $ b \neq 0$ równanie nie ma wtedy rozwiązań.</p>
+    <h2>Przykład 1.4</h2>
+    <p>
+    Przykładowe równania liniowe sprzeczne: 
+    $$3x - 6 = 3x + 9$$
+    $$\frac{3}{7}x + 23 = \frac{4}{7}x - \frac{1}{7}x + 10$$
+    $$3(x - 6) = 12(\frac{x}{4} + 5) $$
+    </p>
+    <div id="questions_1"></div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js">
+    //konfetti
+  </script>
+
+  <script src="/matura-podstawowa/script.js"></script>
+  <script>
+    //tutaj dajesz zadania do odpowiednich containerów
+  </script>
+  <script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$']]
+    }
+  };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>
