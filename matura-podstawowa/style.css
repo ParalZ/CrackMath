@@ -9,13 +9,14 @@ body {
   margin: 0;
 }
 
-h2 {
-  display:flex;
-  color: #333;
-  margin-bottom: 1em;
-  font-size: 1.5rem;
+h1{
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  color: #222e50;
+  letter-spacing: 1px;
 }
-
 
 hr {
   border: none;
@@ -27,13 +28,40 @@ html {
   scroll-padding-top: 5rem; /* adjust to your dashboard height */
 }
 
-.section p{
+.bold-word{
+  font-weight: bold;
+}
+
+/* ===========================
+   General Links
+   =========================== */
+
+a {
+  display: block;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #51a2ff;
+  transition: color 0.2s;
+}
+
+/* ===========================
+    Theory-Zadania-sections
+   =========================== */
+.theory-section p{
   padding-left: 5%;
   font-size: 1.2rem;
 }
 
-.bold-word{
-  font-weight: bold;
+.theory-section h2{
+  display:flex;
+  color: #333;
+  margin-bottom: 1em;
+  font-size: 1.5rem;
 }
 
 .uwaga p{
@@ -54,23 +82,6 @@ html {
   display: inline-block;
   position: relative;
   left: 99%;
-}
-
-/* ===========================
-   Links
-   =========================== */
-
-a {
-  display: block;
-  margin: 1rem 0;
-  font-size: 1.2rem;
-  text-decoration: none;
-  color: #fff;
-}
-
-a:hover {
-  color: #51a2ff;
-  transition: color 0.2s;
 }
 
 /* ===========================
@@ -128,46 +139,35 @@ a:hover {
 }
 
 /* ===========================
-   Headings
+   main-page-headings
    =========================== */
-
-h1.center {
+.main-page-headings{
+  justify-content: center;
   text-align: center;
-  margin-top: 2rem;
-  font-size: 2.5rem;
-  color: #222e50;
-  letter-spacing: 1px;
 }
 
-h2.center {
-  text-align: center;
+.main-page-headings h2 {
   color: #3a506b;
   margin-bottom: 2rem;
 }
-
 /* ===========================
-   Centered Containers & Lists
+   main matura podstawowa section list
    =========================== */
-
-.center {
-  text-align: center;
-}
-
-.centered {
+.section-list {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px; /* space between input and button */
 }
 
-.centered ul {
+.section-list ul {
   list-style: none;
   padding: 0;
   margin: 0 auto;
-  width: 50%; /* Adjust width as needed */
+  width: 60%; /* Adjust width as needed */
 }
 
-.centered li {
+.section-list li {
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -238,7 +238,14 @@ button:hover{
 }
 
 .result {
+  justify-content: center;
+  text-align: center;
   font-weight: bold;
+}
+
+.solution {
+  justify-content: center;
+  text-align: center;
 }
 
 /* ===========================

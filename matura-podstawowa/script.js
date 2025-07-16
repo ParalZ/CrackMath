@@ -85,8 +85,8 @@ function addOpenQuestion(containerId, questionText, answer,latexAnswer, resultId
       <button onclick="checkAnswer('${answer}','${latexAnswerReplaced}', '${resultId}', '${inputId}','${solutionId}')">Submit</button>
       <button class="show-answer-btn" onclick="showOpenAnswer('${latexAnswerReplaced}', '${resultId}','${solutionId}')">Answer</button>
     </div>
-    <p class="center result" id="${resultId}" style="visibility:hidden;">&nbsp;</p>
-    <p class="center solution" id="${solutionId}" style="display:none;">${solutionText}</p>
+    <p class="result" id="${resultId}" style="visibility:hidden;">&nbsp;</p>
+    <p class="solution" id="${solutionId}" style="display:none;">${solutionText}</p>
   `;
   container.appendChild(div);
   const inputElem = div.querySelector(`#${inputId}`);
@@ -112,7 +112,7 @@ function addMultipleChoiceQuestion(containerId, questionText,latexAnswer, result
       <button data-letter="D">D. ${D}</button>
       <button class="show-answer-btn">Answer</button>
     </div>
-    <p class="center result" id="${resultId}" style="visibility:hidden;">&nbsp;</p>
+    <p class="result" id="${resultId}" style="visibility:hidden;">&nbsp;</p>
   `;
   container.appendChild(div);
 
