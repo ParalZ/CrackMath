@@ -3,10 +3,11 @@
    =========================== */
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  padding: 4rem 2rem 2rem 2rem; /* Top padding for fixed dashboard */
-  background: linear-gradient(135deg, #f0f4ff 0%, #E8D9D9 100%);
+  padding: 4rem 4rem 6rem 4rem;
+  background-color: #f0f4ff;
   min-height: 100vh;
   margin: 0;
+
 }
 
 h1{
@@ -52,11 +53,28 @@ a:hover {
     Theory-Zadania-sections
    =========================== */
 .theory-section p{
-  padding-left: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
   font-size: 1.2rem;
 }
 
 .theory-section h2{
+  display:flex;
+  color: #222;
+  margin-bottom: 1em;
+  font-size: 1.5rem;
+}
+
+.theory-section ol{
+  font-size: 1.2rem;
+  padding-left: 10%;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  gap: 1rem;
+}
+
+
+.zadania-section h2{
   display:flex;
   color: #222;
   margin-bottom: 1em;
@@ -190,7 +208,14 @@ a:hover {
    Questions & Inputs
    =========================== */
 
-.open-question {
+p.open-question {
+  display: flex;
+  font-size: 1.4rem;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; /* space between input and button */
+}
+div.open-question {
   display: flex;
   font-size: 1.4rem;
   justify-content: center;
@@ -245,6 +270,7 @@ button:hover{
 .solution {
   justify-content: center;
   text-align: center;
+  font-size: 1.2rem;
 }
 
 /* ===========================

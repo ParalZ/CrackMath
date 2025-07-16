@@ -20,4 +20,4 @@
 #C42021
 
 body background
-#f0f4ff / #E8D9D9
+#f0f4ff
