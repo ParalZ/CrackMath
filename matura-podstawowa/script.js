@@ -59,6 +59,13 @@ function showSolution(solutionId){
   }
 }
 
+function showHeading(div){
+  const heading = div.querySelector("h2");
+  if(!(heading.getHTML() === "")){
+    heading.style.display = "grid";
+  }
+}
+
 function showMultipleChoiceAnswer(latexAnswer, resultId){
   const resultElem = document.getElementById(resultId);
   resultElem.classList.remove("invalid", "correct","correct-anim");
@@ -70,7 +77,7 @@ function showMultipleChoiceAnswer(latexAnswer, resultId){
   resultElem.classList.add("correct-anim");
 }
 
-function addOpenQuestion(containerId, questionText, answer,latexAnswer, resultId, inputId, solutionText, solutionId) {
+function addOpenQuestion(containerId,headingText, questionText, answer,latexAnswer, resultId, inputId, solutionText, solutionId) {
   //replacing single \ with double \\ 
   // cause inner html is treated like a string so first \ escapes the second \ so the
   // latexAnswerReplaced becomes for example \sqrt{3} which is a proper latex represantation
@@ -79,6 +86,7 @@ function addOpenQuestion(containerId, questionText, answer,latexAnswer, resultId
   const div = document.createElement('div');
   div.className = 'question-block';
   div.innerHTML = `
+    <h2 style="display:none;">${headingText}</h2>
     <p class="open-question">${questionText}</p>
     <div class="open-question">
       <input type="text" id="${inputId}" />
@@ -89,6 +97,8 @@ function addOpenQuestion(containerId, questionText, answer,latexAnswer, resultId
     <p class="solution" id="${solutionId}" style="display:none;">${solutionText}</p>
   `;
   container.appendChild(div);
+  showHeading(div);
+
   const inputElem = div.querySelector(`#${inputId}`);
     inputElem.addEventListener('keydown',function(event){
       if(event.key==="Enter"){
