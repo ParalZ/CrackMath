@@ -6,9 +6,9 @@ if (localStorage.getItem('theme') === 'dark') {
 function init() {
 }
 
-function checkAnswer(expected, latexAnswer, resultId = "result", answerId = "answer",solutionId) {
-    const input = document.getElementById(answerId).value;
-    const resultElem = document.getElementById(resultId);
+function checkAnswer(expected, latexAnswer,div) {
+    const input = div.querySelector("input").value;
+    const resultElem = div.querySelector(".result");
 
     resultElem.classList.remove("invalid", "correct","correct-anim");
     void resultElem.offsetWidth; // Force reflow to reset the animation 
@@ -33,15 +33,15 @@ function checkAnswer(expected, latexAnswer, resultId = "result", answerId = "ans
       resultElem.classList.add("invalid");
     }
     resultElem.style.visibility = "visible";
-    showSolution(solutionId);
+    showSolution(div);
 
     if (window.MathJax && window.MathJax.typeset) {
       MathJax.typeset([resultElem]);
     }
 }
 
-function showOpenAnswer(latexAnswer, resultId,solutionId){
-  const resultElem = document.getElementById(resultId);
+function showOpenAnswer(latexAnswer,div){
+  const resultElem = div.querySelector(".result");
   resultElem.classList.remove("invalid", "correct","correct-anim");
   resultElem.innerHTML = `Odpowiedź: $${latexAnswer}$`;
   resultElem.style.visibility = "visible";
@@ -49,11 +49,11 @@ function showOpenAnswer(latexAnswer, resultId,solutionId){
     MathJax.typeset([resultElem]);
   }
   resultElem.classList.add("correct-anim");
-  showSolution(solutionId);
+  showSolution(div);
 }
 
-function showSolution(solutionId){
-  const solutionElem = document.getElementById(solutionId);
+function showSolution(div){
+  const solutionElem = div.querySelector(".solution");
   if(!(solutionElem.getHTML() === "")){
     solutionElem.style.display = "grid";
   }
@@ -77,7 +77,7 @@ function showMultipleChoiceAnswer(latexAnswer, resultId){
   resultElem.classList.add("correct-anim");
 }
 
-function addOpenQuestion(containerId,headingText, questionText, answer,latexAnswer, resultId, inputId, solutionText, solutionId) {
+function addOpenQuestion(containerId,headingText, questionText, answer,latexAnswer, solutionText) {
   //replacing single \ with double \\ 
   // cause inner html is treated like a string so first \ escapes the second \ so the
   // latexAnswerReplaced becomes for example \sqrt{3} which is a proper latex represantation
@@ -89,22 +89,22 @@ function addOpenQuestion(containerId,headingText, questionText, answer,latexAnsw
     <h2 style="display:none;">${headingText}</h2>
     <p class="open-question">${questionText}</p>
     <div class="open-question">
-      <input type="text" id="${inputId}" />
-      <button onclick="checkAnswer('${answer}','${latexAnswerReplaced}', '${resultId}', '${inputId}','${solutionId}')">Submit</button>
-      <button class="show-answer-btn" onclick="showOpenAnswer('${latexAnswerReplaced}', '${resultId}','${solutionId}')">Answer</button>
+      <input type="text"/>
+      <button onclick="checkAnswer('${answer}','${latexAnswerReplaced}',this.closest('.question-block'))">Submit</button>
+      <button class="show-answer-btn" onclick="showOpenAnswer('${latexAnswerReplaced}',this.closest('.question-block'))">Answer</button>
     </div>
-    <p class="result" id="${resultId}" style="visibility:hidden;">&nbsp;</p>
-    <p class="solution" id="${solutionId}" style="display:none;">${solutionText}</p>
+    <p class="result" style="visibility:hidden;">&nbsp;</p>
+    <p class="solution" style="display:none;">${solutionText}</p>
   `;
   container.appendChild(div);
   showHeading(div);
 
-  const inputElem = div.querySelector(`#${inputId}`);
+  const inputElem = div.querySelector("input");
     inputElem.addEventListener('keydown',function(event){
       if(event.key==="Enter"){
         //here we use normal latexAnswer as it is a parameter not a string
         //so the backslashes are not convered 
-        checkAnswer(answer,latexAnswer,resultId,inputId,solutionId);
+        checkAnswer(answer,latexAnswer,div);
       }
     });
 }
