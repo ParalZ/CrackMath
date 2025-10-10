@@ -1,0 +1,18 @@
+[
+  {
+    "type": "open",
+    "containerId": "questions_1",
+    "question": "Rozwiąż równanie $7x=14$, wynik to:",
+    "answerForEvaluation": "2",
+    "latexAnswer": "2",
+    "explanation": "Dzielimy obie strony przez 7, co daje $x=2$"
+  },
+  {
+    "type":"open",
+    "containerId": "questions_2",
+    "question": "Rozwiąż równanie $13x = 16-14$, wynik to:",
+    "answerForEvaluation": "2/13",
+    "latexAnswer": "\\frac{2}{13}",
+    "explanation": "Przekształcamy równanie: $13x = 2$, więc $x = \\frac{2}{13}$"
+  }
+]
