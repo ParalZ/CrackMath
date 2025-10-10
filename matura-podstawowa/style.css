@@ -28,8 +28,9 @@ html {
   scroll-padding-top: 5rem; /* adjust to your dashboard height */
 }
 
-.bold-word{
+.boldWord{
   font-weight: bold;
+  display: inline-block;
 }
 
 /* ===========================
@@ -81,12 +82,12 @@ a:hover {
   font-size: 1.5rem;
 }
 
-.uwaga p{
+.tcolorbox p{
   font-size: 1.2rem;
   display: inline-block;
 }
 
-.uwaga {
+.tcolorbox {
   border: 2px solid #222;     /* thickness, style, and color */
   padding: 10px;              /* space between text and border */    /* shrink-wrap the border to content */
   border-radius: 8px; /* rounded frame */

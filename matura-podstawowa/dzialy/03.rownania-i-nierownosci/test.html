@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>II. Wyrażenia algebraiczne</title>
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+
+
+<body>
+  <!--Dashboard-->
+  <div class="dashboard">
+    <a href="../../index.html">Matura Podstawowa 2026</a>
+    <a href="#zadania-section" class="jump-btn">Przejdź do sekcji "Zadania"</a>
+  </div>
+  <!--footer-bar-->
+  <div class="footer-bar">
+    <a href="../../to_be_developed.html">Poprzednia Strona</a>
+    <a href="../../to_be_developed.html">Następna Strona</a>
+  </div>
+
+  <div class="theory-section">
+    <h1 id="tutaj-powinien-być-h1">Tutaj powinien być h1</h1>
+    <hr />
+    <h2 id="definicja">Definicja</h2>
+    <p>tutaj możemy se wpisać co chcemy i to paragraf</p>
+    <h2 id="przykład">Przykład</h2>
+    <p>adwdadwdwad</p>
+    <h2 id="przykład-1">Przykład</h2>
+    <p>awdadwad</p>
+    <h2 id="definicja-1">Definicja</h2>
+    <h2 id="definicja-2">Definicja</h2>
+    <h2 id="definicja-3">Definicja</h2>
+    <h2 id="definicja-4">Definicja</h2>
+    <h2 id="definicja-5">Definicja</h2>
+    <div class="tcolorbox">
+    <div class="boldWord">
+    <p>Uwaga!</p>
+    </div>
+    <p>tutaj text</p>
+    </div>
+    <hr />
+  </div>
+
+  <div id="zadania-section">
+    <hr>
+    <h1>Zadania</h1>
+    <div id="zadania"></div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js">
+    //konfetti
+  </script>
+
+  <script src="../../script.js"></script>
+  <script>
+    addOpenQuestion(
+      "questions_1",                                          //containerId
+      "Zadanie 1.11",
+      "Rozwiąż równanie $7x=14$, wynik to:",   //questionText
+      "2",                                  //answer to evaluate by MathJax
+      "2",                                   //latex Answer to show when done correctly
+      "Dzielimy obie strony przez 7 (ponieważ jest to współczynnik przy x), co daje nam $x=2$"
+    )
+    addOpenQuestion(
+      "questions_2",                                          //containerId
+      "Zadanie 1.13",
+      "Rozwiąż równanie $13x = 16-14$, wynik to:",   //questionText
+      "2/13",                                  //answer to evaluate by MathJax
+      "\\frac{2}{13}",                                   //latex Answer to show when done correctly
+      ""
+    )
+    addOpenQuestion(
+      "questions_3",                                          //containerId
+      "Zadanie 1.15",
+      "Rozwiąż równanie $3x + 2 = 5x -3$, wynik to:",   //questionText
+      "5/2",                                  //answer to evaluate by MathJax
+      "\\frac{5}{2}",                                   //latex Answer to show when done correctly
+      ""
+    )
+    addOpenQuestion(
+      "questions_4",                                          //containerId
+      "Zadanie 1.17",
+      "Rozwiąż równanie $4(x-2) +1 = 5(x+1) +3$, wynik to:",   //questionText
+      "-15",                                  //answer to evaluate by MathJax
+      "-15",                                   //latex Answer to show when done correctly
+      ""                                                   //solution text
+    )
+    addOpenQuestion(
+      "zadania",                                          //containerId
+      "Zadanie 1",                                        //headingText
+      "Rozwiązaniem równania $\\frac{3x-1}{7x+1}=\\frac{2}{5}$ jest liczba",   //questionText
+      "7",                                  //answer to evaluate by MathJax
+      "7",                                   //latex Answer to show when done correctly
+      ""
+    )
+    
+  </script>
+  <script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$']]
+    }
+  };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>
