@@ -18,7 +18,7 @@ function checkAnswer(expected, latexAnswer,div) {
       const evaluated = math.evaluate(input);
       const expectedValue = math.evaluate(expected);
       if (Math.abs(evaluated - expectedValue) < 0.001) {
-        resultElem.innerHTML = `✅ Dobrze! Odpowiedź to: $${latexAnswer}$`;
+        setSafeHTML(resultElem, `✅ Dobrze! Odpowiedź to: $${latexAnswer}$`);
         resultElem.style.background = "";
         resultElem.style.color = "";
         resultElem.classList.add("correct-anim","correct");
@@ -43,7 +43,7 @@ function checkAnswer(expected, latexAnswer,div) {
 function showOpenAnswer(latexAnswer,div){
   const resultElem = div.querySelector(".result");
   resultElem.classList.remove("invalid", "correct","correct-anim");
-  resultElem.innerHTML = `Odpowiedź: $${latexAnswer}$`;
+  setSafeHTML(resultElem, `Odpowiedź: $${latexAnswer}$`);
   resultElem.style.visibility = "visible";
   if (window.MathJax && window.MathJax.typeset) {
     MathJax.typeset([resultElem]);
@@ -69,7 +69,7 @@ function showHeading(div){
 function showMultipleChoiceAnswer(latexAnswer, resultId){
   const resultElem = document.getElementById(resultId);
   resultElem.classList.remove("invalid", "correct","correct-anim");
-  resultElem.innerHTML = `Odpowiedź: $${latexAnswer}$`;
+  setSafeHTML(resultElem, `Odpowiedź: $${latexAnswer}$`);
   resultElem.style.visibility = "visible";
   if (window.MathJax && window.MathJax.typeset) {
     MathJax.typeset([resultElem]);
@@ -133,7 +133,7 @@ function addMultipleChoiceQuestion(containerId, questionText,latexAnswer, result
       void resultElem.offsetWidth; //force reflow
 
       if(btn.getAttribute('data-letter')===correctLetter){
-        resultElem.innerHTML = `✅ Dobrze! Odpowiedź to: $${latexAnswer}$`;
+        setSafeHTML(resultElem, `✅ Dobrze! Odpowiedź to: $${latexAnswer}$`);
         resultElem.classList.add("correct-anim","correct");
         //konfetti
         if(window.confetti) confetti();
@@ -153,7 +153,7 @@ function addMultipleChoiceQuestion(containerId, questionText,latexAnswer, result
     const resultElem = div.querySelector(`#${resultId}`);
     resultElem.classList.remove("invalid","correct","correct-anim");
     void resultElem.offsetWidth; //force reflow
-    resultElem.innerHTML = `Odpowiedź to: $${latexAnswer}$`;
+    setSafeHTML(resultElem, `Odpowiedź to: $${latexAnswer}$`);
     resultElem.classList.add("correct-anim");
     resultElem.style.visibility = "visible";
     if (window.MathJax && window.MathJax.typeset) {
@@ -177,14 +177,9 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("h2").forEach(h2 => {
     const text = h2.textContent.trim(); // get pure text to match
 
-    if (text === "Definicja") {
+    if (text !== "Przykład" && text !== "") {
       count++;
-      h2.textContent = `Definicja ${count}`;
-    }
-
-    if (text === "Przykład") {
-      count++;
-      h2.textContent = `Przykład ${count}`;
+      h2.textContent = `${text} ${count}`;
     }
   });
 });
