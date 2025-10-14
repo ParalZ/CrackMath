@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>II. Wyrażenia algebraiczne</title>
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+
+
+<body>
+  <!--Dashboard-->
+  <div class="dashboard">
+    <a href="../../index.html">Matura Podstawowa 2026</a>
+    <a href="#zadania-section" class="jump-btn">Przejdź do sekcji "Zadania"</a>
+  </div>
+  <!--footer-bar-->
+  <div class="footer-bar">
+    <a href="../../to_be_developed.html">Poprzednia Strona</a>
+    <a href="../../to_be_developed.html">Następna Strona</a>
+  </div>
+  <!--latex-converted-to-html-->
+  <div class="theory-section">
+    <hr>
+    <h1 id="zamiana-ułamków">Zamiana ułamków</h1>
+    <hr>
+    <h2 id="ułamki-zwykłe">Ułamki zwykłe</h2>
+    <p>Ułamki zwykłe:<br />
+    Są to wszystkie ułamki które są zapisane jako <span class="math inline">\(\frac{licznik}{mianownik}\)</span></p>
+    <h3 id="przykład">Przykład</h3>
+    <p><span class="math display">\[\frac{7}{2}\]</span></p>
+    <hr>
+    <h2 id="ułamki-mieszane">Ułamki mieszane</h2>
+    <p>Ułamki mieszane<br />
+    Są one mieszane ponieważ składają się z liczby całkowitej (w tym wypadku 3) i części ułamka zwykłego (w tym wypadku <span class="math inline">\(\frac{1}{2}\)</span>)</p>
+    <h3 id="przykład-1">Przykład</h3>
+    <p><span class="math display">\[3\frac{1}{2}\]</span></p>
+    <hr>
+    <h2 id="ułamki-dziesiętne">Ułamki Dziesiętne</h2>
+    <p>Ułamki dziesiętne</p>
+    <h3 id="przykład-2">Przykład</h3>
+    <p><span class="math display">\[0,25\]</span></p>
+    <p>W tej części skupimy się tylko na zamianie ułamków mieszanych i dziesiętnych na zwykłe, ponieważ zwykle chcemy robić obliczenia na ułamkach zwykłych ponieważ są najprostsze i najważniejsze na maturze.</p>
+    <hr>
+    <h2 id="zamiana-ułamków-mieszanych-na-zwykłe">Zamiana ułamków mieszanych na zwykłe</h2>
+    <p>Gdy mamy ułamek mieszany taki jak <span class="math inline">\(3\frac{1}{2}\)</span> mamy 3 całości i <span class="math inline">\(\frac{1}{2}\)</span>W takim wypadku chcemy zamienić całość (3) na ułamek <span class="math inline">\(\frac{3}{1}\)</span> i pomnożyć obie liczby przez mianownik ułamka <span class="math inline">\(\frac{1}{2}\)</span> czyli <span class="math inline">\(\frac{3\cdot2}{1\cdot2} = \frac{6}{2}\)</span> i potem dodać ułamki <span class="math inline">\(\frac{6}{2} + \frac{1}{2} = \frac{7}{2}\)</span></p>
+    <h3 id="przykład-3">Przykład</h3>
+    <p><span class="math display">\[2\frac{1}{3} = \frac{6}{3}+\frac{1}{3} = \frac{7}{3}\]</span></p>
+    <div class="tcolorbox">
+    <div class="boldWord">
+    <p>Uwaga!</p>
+    </div>
+    <p>Możemy też skrócić ten proces do pomnożenia całości z mianownikiem ułamka i dodać go do licznika. Niżej przykład dla lepszego zrozumienia</p>
+    </div>
+    <h3 id="przykład-4">Przykład</h3>
+    <p><span class="math display">\[4\frac{1}{5} = \frac{4\cdot5 + 1}{5} = \frac{21}{5}\]</span></p>
+    <div class="zadania">
+    <hr />
+    <div id="questions_1">
+
+    </div>
+    <hr />
+    </div>
+    <h2 id="zamiana-ułamków-dziesiętnych-na-zwykłe">Zamiana ułamków dziesiętnych na zwykłe</h2>
+    <p>Jak mamy na przyklad 0,5l to jest to pół litra, inaczej połowa z jednego. Gdy chcemy to zamienić na ułamek zwykły to każde miejsce po przecinku daje nam dodatkowe zero w mianowniku, a jako licznik dajemy samą liczbę. W wypadku 0,5l byłoby to <span class="math display">\[\frac{5}{10}\]</span> czyli inaczej, po uproszczeniu <span class="math display">\[\frac{1}{2}\]</span> czyli połowa z jednego.</p>
+    <p>W skrócie gdy mamy ułamek dziesiętny zapisujemy licznik jako liczbę bez przecinka, a mianownik jako 1 z dołożoną ilością zer taką samą ile jest miejsc po przecinku w ułamku.</p>
+    <h3 id="przykład-5">Przykład</h3>
+    <p><span class="math display">\[0,13 = \frac{13}{100}\]</span> Ponieważ licznik to liczba bez przecinków czyli 13 a mianownik to 1 i dołożone 2 zera bo tyle jest miejsc po przecinku <span class="math display">\[1,89 = \frac{189}{100}\]</span> <span class="math display">\[0,700 = \frac{700}{1000} = \frac{7}{10}\]</span> <span class="math display">\[52,98 = \frac{5298}{100}\]</span></p>
+    <div class="zadania">
+    <hr />
+    <div id="questions_">
+
+    </div>
+    <hr />
+    </div>
+  </div>
+
+  <!--zadania-section-na-sam-koniec-->
+  <div id="zadania-section">
+    <hr>
+    <h1>Zadania</h1>
+    <div id="zadania"></div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js">
+    //konfetti
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.2/dist/purify.min.js"></script>
+  <script src="../../js/utils/safeHTML.js"></script>
+  <script src="../../js/script.js"></script>
+  <script src="../../js/loader.js"></script>
+  <script>loadQuestions('questions/zamiana_ulamkow.json')</script>
+  <script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],   // inline: $...$ or \(...\)
+    }
+  };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> //MathJax</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+</body>
+</html>

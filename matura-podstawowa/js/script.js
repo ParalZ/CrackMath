@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (text !== "Przykład" && text !== "") {
       count++;
-      h2.textContent = `${text} ${count}`;
+      h2.textContent = `${count}) ${text}`;
     }
   });
 });
