@@ -5,8 +5,6 @@
 ## Getting Started
 
 ## Future Development
-- sprawdzić jak działają przedziałły w mathJaxie
-- spróbować automatycznie nadawać ID open I close answers (ewentualnie nauczenie sie jak zrobić backend żeby wklejać jsona do zadań i czytać go z pliku i numerowanie go po kolei)
 
 
 ## Bugs to fix
