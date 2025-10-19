@@ -7,7 +7,7 @@ const questionHandlers = {
 
 // Generic function to load questions from JSON for a page
 function loadQuestions(jsonPath) {
-  fetch(jsonPath)
+  return fetch(jsonPath)
     .then(response => response.json())
     .then(data => {
       data.forEach(q => {
