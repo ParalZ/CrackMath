@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>II. Wyrażenia algebraiczne</title>
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+
+
+<body>
+  <!--Dashboard-->
+  <div class="dashboard">
+    <a href="../../../index.html">Matura Podstawowa 2026</a>
+    <a href="#zadania-section" class="jump-btn">Przejdź do sekcji "Zadania"</a>
+  </div>
+  <!--footer-bar-->
+  <div class="footer-bar">
+    <a href="../../to_be_developed.html">Poprzednia Strona</a>
+    <a href="../../to_be_developed.html">Następna Strona</a>
+  </div>
+  <!--latex-converted-to-html-->
+  <div class="theory-section" id="theory-section">
+    <h1 id="mnożenie-nawiasów">Mnożenie nawiasów</h1>
+    <hr />
+    <h2 id="mnożenie-nawiasów-z-1-liczbą">Mnożenie nawiasów z 1 liczbą</h2>
+    <p>Mamy takie wyrażenie: <span class="math display">\[3\cdot(4\cdot a) = 3\cdot 4 a = 12a\]</span> Wystarczy wymnożyć to tylko raz. To tak jakbyśmy mieli 4 arbuzy i pomnożyli razy 3, wtedy mamy 12 arbuzów.<br />
+    Teraz zmieniamy lekko wyrażenie i zamiast mnożenia w nawiasie mamy dodawanie na przykład: <span class="math display">\[3(4+a) = 3\cdot4 + 3\cdot a = 12+3a\]</span> To jakbyśmy mieli 4 złote i 1 arbuza jak pomnożymy to razy 3 to mamy 12 zł i 3 arbuzy.<br />
+    Więc gdy mamy dodawanie w nawiasie to mnożymy każdy element razy liczbę przed nawiasem</p>
+    <h3 id="przykład">Przykład</h3>
+    <p><span class="math display">\[4(a+b) = 4a +4b\]</span> <span class="math display">\[a(3+b) = 3a +ab\]</span> <span class="math display">\[5(a+b+x+y) = 5a+5b+5x+5y\]</span> <span class="math display">\[5(3a+2b-x) = 15a+10b-5x\]</span></p>
+    <div class="zadania">
+    <hr />
+    <div id="questions_1">
+
+    </div>
+    </div>
+    <hr />
+    <h2 id="mnożenie-nawiasów-z-wieloma-liczbami">Mnożenie nawiasów z wieloma liczbami</h2>
+    <p>Mamy przykład: <span class="math display">\[(2+3)(a+b) =2(a+b)+3(a+b)= 5(a+b) = 5a +5b\]</span> W takich sytuacjach musimy najpierw wymnożyć pierwszą liczbę przez wszystkie liczby z 2 nawiasu a potem drugą liczbę razy wszystkie liczby z 2 nawiasu.<br />
+    </p>
+    <h3 id="przykład-1">Przykład</h3>
+    <p><span class="math display">\[(2+a)(3+b) = 2(3+b)+a(3+b) = 6 + 2b + 3a + ab\]</span> <span class="math display">\[(x+y+z)(2+a) = x(2+a)+y(2+a)+z(2+a) =2x+xa +2y+ya+2z+za\]</span></p>
+    <div class="zadania">
+    <hr />
+    <div id="questions_2">
+
+    </div>
+    </div>
+    <hr />
+    <h2 id="podsumowanie">Podsumowanie</h2>
+    <ul>
+        <li><p>Mnożąc liczbę przez nawias w którym jest dodawanie lub odejmowanie, mnożymy liczbę przed nawiasem razy każdy dodawany element w nawiasie <span class="math inline">\(a(x-y) = ax-ay\)</span></p></li>
+        <li><p>Mnożąc nawias razy nawias musimy pomnożyć pierwszą liczbę razy drugi nawias a potem następną liczbę przez cały drugi nawias <span class="math inline">\((a+b)(x-y) = a(x-y)+b(x-y) = ax -ay+bx-by\)</span></p></li>
+    </ul>
+  </div>
+
+  <!--zadania-section-na-sam-koniec-->
+  <div id="zadania-section">
+    <hr>
+    <h1>Zadania</h1>
+    <div id="zadania"></div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js">
+    //konfetti
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.2/dist/purify.min.js"></script>
+  <script src="../../js/utils/safeHTML.js"></script>
+  <script src="../../js/script.js"></script>
+  <script src="../../js/autoNumberHeadings.js"></script>
+  <script src="../../js/loader.js"></script>
+  <script>
+      loadQuestions("questions/mnozenie_nawiasow.json")
+      .then(() => {
+        numberZadaniaHeadings();
+      });
+  </script>
+  <script>
+  //being able to write inline math using LaTex, needed to add "\(...\)" as well as without it,
+  //if we do not add "\(...\)" to inline math 
+  //it is overwritten by the next script so we either have $$ inline math or "\(...\)"
+  //so we need it to have both at the same time
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],   // inline: $...$ or \(...\)
+    }
+  };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> //LaTex rendering on the website</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.min.js">//MathJax</script>
+</body>
+</html>

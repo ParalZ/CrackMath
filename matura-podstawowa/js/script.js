@@ -114,6 +114,7 @@ function addMultipleChoiceQuestion(containerId, questionText,latexAnswer, result
   const div = document.createElement('div');
   div.className = 'question-block';
   div.innerHTML = `
+    <h2 style="display:none;"></h2>
     <p class="choice-question">${questionText}</p>
     <div class="choice-question">
       <button data-letter="A">A. ${A}</button>

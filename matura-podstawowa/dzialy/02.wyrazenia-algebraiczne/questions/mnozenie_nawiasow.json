@@ -1,0 +1,50 @@
+[
+    {
+        "type": "multipleChoice",
+        "containerId": "questions_1",
+        "question": "Oblicz $3(a+b)$",
+        "latexAnswer": "3a+3b",
+        "resultId": "multipleChoice_1",
+        "A" : "3a+b",
+        "B" : "3a+3b",
+        "C" : "3a-3b",
+        "D" : "a+3b",
+        "correctLetter" : "B"
+    },
+    {
+        "type": "multipleChoice",
+        "containerId": "questions_1",
+        "question": "Oblicz $x(a+b)$",
+        "latexAnswer": "xa+xb",
+        "resultId": "multipleChoice_2",
+        "A" : "xa+b",
+        "B" : "xab",
+        "C" : "xa-xb",
+        "D" : "xa+xb",
+        "correctLetter" : "D"
+    },
+    {
+        "type": "multipleChoice",
+        "containerId": "questions_2",
+        "question": "Oblicz $(3-a)(5-b)$",
+        "latexAnswer": "15-3b-5a+ab",
+        "resultId": "multipleChoice_3",
+        "A" : "15 + ab",
+        "B" : "15 - 3b - 5a - ab",
+        "C" : "15 - 3b - 5a + ab",
+        "D" : "15 - ab",
+        "correctLetter" : "C"
+    },
+    {
+        "type": "multipleChoice",
+        "containerId": "zadania",
+        "question": "Oblicz $7(x+y-z)$",
+        "latexAnswer": "7x+7y-7z",
+        "resultId": "multipleChoice_4",
+        "A" : "7x + 7y - 7z",
+        "B" : "7x + 7y + 7z",
+        "C" : "7xyz",
+        "D" : "7x - 7y - 7z",
+        "correctLetter" : "A"
+    }
+]
