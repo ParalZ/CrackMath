@@ -3,11 +3,11 @@ const questionHandlers = {
     addOpenQuestion(q.containerId,q.question, q.answerForEvaluation, q.latexAnswer, q.explanation);
   },
   multipleChoice :function(q){
-    if(!(q.containerId && q.question && q.latexAnswer && q.resultId && q.A && q.B && q.C && q.D && q.correctLetter)){
+    if(!(q.containerId && q.question && q.latexAnswer && q.A && q.B && q.C && q.D && q.correctLetter)){
       console.warn("Some fields are incorrect");
       return;
     }
-    addMultipleChoiceQuestion(q.containerId, q.question,q.latexAnswer, q.resultId,q.A,q.B,q.C,q.D,q.correctLetter)
+    addMultipleChoiceQuestion(q.containerId, q.question,q.latexAnswer,q.A,q.B,q.C,q.D,q.correctLetter)
   }
 };
 

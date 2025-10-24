@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>I. Liczby Rzeczywiste</title>
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+
+
+<body>
+  <!--Dashboard-->
+  <div class="dashboard">
+    <a href="../../../index.html">Matura Podstawowa 2026</a>
+    <a href="#zadania-section" class="jump-btn">Przejdź do sekcji "Zadania"</a>
+  </div>
+  <!--footer-bar-->
+  <div class="footer-bar">
+    <a href="../../to_be_developed.html">Poprzednia Strona</a>
+    <a href="../../to_be_developed.html">Następna Strona</a>
+  </div>
+  <!--latex-converted-to-html-->
+  <div class="theory-section" id="theory-section">
+    <!--HERE copy latex converted html-->
+    <!--HERE copy latex converted html-->
+    <!--HERE copy latex converted html-->
+    <h1 id="wyrażenia-algebraiczne">Wyrażenia algebraiczne</h1>
+    <hr />
+    <h2 id="wzory-skróconego-mnożenia">Wzory skróconego mnożenia</h2>
+    <p>Wzorami skróconego mnożenia nazywamy wzory które jak same o sobie mówią pomogą nam skrócić czas jaki spędzamy na mnożeniu nawiasów. Weźmy na to że chcemy pomnożyć ze sobą <span class="math inline">\((x + 3y) \cdot (x + 3y)\)</span> normalnie musielibyśmy mnożyć każdy wyraz ze sobą i byśmy otrzymali <span class="math display">\[(x + 3y) \cdot (x +3y) = x \cdot x + x \cdot 3y + 3y \cdot x + 3y \cdot 3y = x^2 + 3xy + 3xy + 9y^2 = x^2 + 6xy + 9y^2\]</span> O ile ten przypadek jeszcze nie jest taki zły to w momencie gdy pojawią nam się np. ułamki czy pierwiastki szansa na popełnienie błędu robiąc to w sposób manualny drastycznie wzrasta. Zatem przedstawiamy Państwu coś co zdecydowanie ułatwi wam życie bohaterów dzisiejszej lekcji mianowicie wzory skróconego mnożenia. Zapamiętajcie sobie następujące <span class="math inline">\(3\)</span> wzory a każde zadanie z wzorami skróconego mnożenia będzie w waszym zasięgu, a mianowicie: <span class="math display">\[\begin{align}
+        (a + b)^2 = a^2 + 2ab + b^2 \\
+        (a - b)^2 = a^2 - 2ab + b^2 \\
+        a^2 - b^2 = (a - b)(a + b)
+    \end{align}\]</span></p>
+    <div class="tcolorbox">
+    <div class="boldWord">
+    <p>Uwaga!</p>
+    </div>
+    <p>Niektórzy z was zapewne zadadzą sobie pytanie dlaczego tak jest otóż żeby sprawdzić że te tożsamości faktycznie zachodzą wystarczy manualnie wymnożyć te nawiasy i powinno działać zatem przekonajmy się ;</p>
+    <p><span class="math display">\[(a + b)^2 = (a + b) \cdot (a + b) = a^2 + ab + ab + b^2 = a^2 + 2ab + b^2\]</span> <span class="math display">\[(a - b)^2 = (a - b) \cdot (a - b) = a^2 - ab - ab + b^2 = a^2 -2ab +b^2\]</span> <span class="math display">\[(a - b) \cdot (a + b) = a^2 + ab - ab - b^2 = a^2 - b^2\]</span></p>
+    <p>Właśnie udowodniliśmy że nasze tożsamości są prawdziwe, więc już bez żadnych zawachań możemy śmiało z nich korzystać bo działają.</p>
+    </div>
+    <div class="zadania">
+    <hr />
+    <div id="questions_1">
+
+    </div>
+    </div>
+    <div class="zadania">
+    <hr />
+    <div id="questions_2">
+
+    </div>
+    </div>
+    <!--HERE copy latex converted html-->
+    <!--HERE copy latex converted html-->
+    <!--HERE copy latex converted html-->
+  </div>
+
+  <!--zadania-section-na-sam-koniec-->
+  <div id="zadania-section">
+    <hr>
+    <h1>Zadania</h1>
+    <div id="zadania"></div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js">
+    //konfetti
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.2/dist/purify.min.js"></script>
+  <script src="../../js/utils/safeHTML.js"></script>
+  <script src="../../js/script.js"></script>
+  <script src="../../js/autoNumberHeadings.js"></script>
+  <script src="../../js/loader.js"></script>
+  <script>
+      loadQuestions("questions/zamiana_ulamkow.json")
+      .then(() => {
+        numberZadaniaHeadings();
+      });
+  </script>
+  <script>
+  //being able to write inline math using LaTex, needed to add "\(...\)" as well as without it,
+  //if we do not add "\(...\)" to inline math 
+  //it is overwritten by the next script so we either have $$ inline math or "\(...\)"
+  //so we need it to have both at the same time
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],   // inline: $...$ or \(...\)
+    }
+  };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> //LaTex rendering on the website</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.min.js">//MathJax</script>
+</body>
+</html>

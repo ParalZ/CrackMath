@@ -109,7 +109,7 @@ function addOpenQuestion(containerId, questionText, answer,latexAnswer, solution
     });
 }
 
-function addMultipleChoiceQuestion(containerId, questionText,latexAnswer, resultId,A,B,C,D,correctLetter) {
+function addMultipleChoiceQuestion(containerId, questionText,latexAnswer,A,B,C,D,correctLetter) {
   const container = document.getElementById(containerId);
   const div = document.createElement('div');
   div.className = 'question-block';
@@ -123,13 +123,13 @@ function addMultipleChoiceQuestion(containerId, questionText,latexAnswer, result
       <button data-letter="D">D. ${D}</button>
       <button class="show-answer-btn">Answer</button>
     </div>
-    <p class="result" id="${resultId}" style="visibility:hidden;">&nbsp;</p>
+    <p class="result" style="visibility:hidden;">&nbsp;</p>
   `;
   container.appendChild(div);
 
   div.querySelectorAll('button[data-letter]').forEach(btn => {
     btn.addEventListener('click', function() {
-      const resultElem = div.querySelector(`#${resultId}`);
+      const resultElem = div.querySelector(".result");
       resultElem.classList.remove("invalid","correct","correct-anim");
       void resultElem.offsetWidth; //force reflow
 
