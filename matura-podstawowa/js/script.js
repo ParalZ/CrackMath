@@ -1,11 +1,3 @@
-// Apply dark theme if user has selected it
-if (localStorage.getItem('theme') === 'dark') {
-  document.body.classList.add('dark-theme');
-}
-
-function init() {
-}
-
 function checkAnswer(expected, latexAnswer,div) {
     const input = div.querySelector("input").value;
     const resultElem = div.querySelector(".result");
@@ -151,7 +143,7 @@ function addMultipleChoiceQuestion(containerId, questionText,latexAnswer,A,B,C,D
   });
 
   div.querySelector('.show-answer-btn').addEventListener('click',function(){
-    const resultElem = div.querySelector(`#${resultId}`);
+    const resultElem = div.querySelector(".result");
     resultElem.classList.remove("invalid","correct","correct-anim");
     void resultElem.offsetWidth; //force reflow
     setSafeHTML(resultElem, `Odpowiedź to: $${latexAnswer}$`);
