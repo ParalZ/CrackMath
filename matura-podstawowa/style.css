@@ -236,17 +236,21 @@ div.open-question {
   align-items: center;
   gap: 8px; /* space between input and button */
 }
-input[type="text"] {
+math-field {
+  width: 100%;
+  max-width: 300px; /* Optional upper limit */
+  box-sizing: border-box; /* ensures padding doesn’t add extra width */
   padding: 0.5rem 1rem;
   border: 1.5px solid #51A2FF;
   border-radius: 6px;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   transition: border-color 0.2s;
   outline: none;
   margin-right: 0.5rem;
 }
 
-input[type="text"]:focus {
+
+math-field:focus{
   border-color: #0063CC;
   background: #ECECF1;
 }
