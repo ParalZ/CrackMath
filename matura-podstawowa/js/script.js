@@ -14,8 +14,10 @@ function checkAnswer(latexAnswer, div) {
     // (for the DOM to remove the class and then add it again, 
     // as for optimizations it could not do it if we do it in one call without forced reflow)
     try {
-      const expr1 = ce.parse(latexAnswer);
-      const expr2 = ce.parse(mf.getValue("latex"));
+      const expr1 = ce.parse(latexAnswer).simplify();
+      const expr2 = ce.parse(mf.getValue("latex")).simplify();
+      console.log(latexAnswer)
+      console.log(mf.getValue("latex"))
       console.log(expr1);
       console.log(expr2);
       if (expr1.isSame(expr2)) {

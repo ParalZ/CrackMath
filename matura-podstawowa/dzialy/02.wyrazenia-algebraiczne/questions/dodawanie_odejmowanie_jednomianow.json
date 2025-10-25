@@ -1,0 +1,283 @@
+[
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$4x + 5x - 2x$$",
+        "latexAnswer": "7x",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$7a^2 - 3a^2 + 2a^2$$",
+        "latexAnswer": "6a^2",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$5xy + 3xy - xy$$",
+        "latexAnswer": "7xy",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$8m - 4m + 6n - 2n$$",
+        "latexAnswer": "4m + 4n",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$9x^2y + 2x^2y - 5x^2y$$",
+        "latexAnswer": "6x^2y",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$3p^3 - p^3 + 4p^3$$",
+        "latexAnswer": "6p^3",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$2a + 4b - a + 3b$$",
+        "latexAnswer": "a + 7b",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$6x^3y - 2x^3y + x^3y$$",
+        "latexAnswer": "5x^3y",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$10z^2 - 4z^2 + 2z$$",
+        "latexAnswer": "6z^2 + 2z",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$7xy^2 + 3xy^2 - 2xy^2$$",
+        "latexAnswer": "8xy^2",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$5a^2b + 2a^2b - 3a^2b$$",
+        "latexAnswer": "4a^2b",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$4m^2n - m^2n + 5m^2n$$",
+        "latexAnswer": "8m^2n",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$9x - 3x + 2x^2 - x^2$$",
+        "latexAnswer": "6x + x^2",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$8b^3 + 2b^3 - 4b^3$$",
+        "latexAnswer": "6b^3",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$3pq + 5pq - 2pq$$",
+        "latexAnswer": "6pq",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$7r^2 - 2r^2 + r^2 + 3$$",
+        "latexAnswer": "6r^2 + 3",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$2x^2y + 4x^2y - 5x^2y$$",
+        "latexAnswer": "x^2y",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$6a^3b - 3a^3b + 2a^3b$$",
+        "latexAnswer": "5a^3b",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$9x^2 - 4x^2 + 3x - x$$",
+        "latexAnswer": "5x^2 + 2x",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$4y^3 + y^3 - 2y^3 + 5$$",
+        "latexAnswer": "3y^3 + 5",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$4x + 3y - 2x + 5y$$",
+        "latexAnswer": "2x + 8y",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$7a^2 - 4a^2 + 3a - 2a$$",
+        "latexAnswer": "3a^2 + a",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$6xy + 2xy - 3x y + 4y x$$",
+        "latexAnswer": "9xy",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$5m^3 - m^3 + 2n - 5n + n$$",
+        "latexAnswer": "4m^3 - 2n",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$8x^2y - 3x^2y + x^2y - 2xy^2$$",
+        "latexAnswer": "6x^2y - 2xy^2",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$9p^3q + 2p^3q - 4p^3q + 5$$",
+        "latexAnswer": "7p^3q + 5",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$3a + 4b - 2a + 6b - b$$",
+        "latexAnswer": "a + 9b",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$10x^4 - 3x^4 + 2x - x$$",
+        "latexAnswer": "7x^4 + x",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$4b^3 + b^3 - 5b^3 + 2b - 2b$$",
+        "latexAnswer": "0b^3 + 0b",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$2x - x^2 + 3x^2 - 4x + 5$$",
+        "latexAnswer": "2x^2 - 2x + 5",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$6a^2b + 3a^2b - 4a^2b - a^2b + 7$$",
+        "latexAnswer": "4a^2b + 7",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$5xy^2 - 2xy^2 + 3xy - xy + 4$$",
+        "latexAnswer": "3xy^2 + 2xy + 4",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$7r^2 - r^2 + 2r^3 - 5r^3 + 3r$$",
+        "latexAnswer": "6r^2 - 3r^3 + 3r",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$8u^3v - 3u^3v + u^3v + 2uv - uv$$",
+        "latexAnswer": "6u^3v + uv",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$4x^2 - 2x + 3x^2 - x + 9$$",
+        "latexAnswer": "7x^2 - 3x + 9",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$3a^3 + 2a^2 - a^3 - a^2 + 1$$",
+        "latexAnswer": "2a^3 + a^2 + 1",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$9xy - 4xy + 5x - 2x + 6y$$",
+        "latexAnswer": "5xy + 3x + 6y",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$2m^2n + 3m^2n - 4m n^2 + m n^2 - 6$$",
+        "latexAnswer": "5m^2n - 3mn^2 - 6",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$7z^3 - 2z^3 + 4z - z + 8$$",
+        "latexAnswer": "5z^3 + 3z + 8",
+        "explanation": ""
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$6x^2y - x^2y + 2xy - xy + 4$$",
+        "latexAnswer": "5x^2y + xy + 4",
+        "explanation": ""
+    }
+
+]
