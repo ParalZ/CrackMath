@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Nierówność f(x) > 0</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css">
+<script src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
+</head>
+<body style="display:flex; flex-direction:column; align-items:center; margin-top:30px; font-family:sans-serif;">
+
+<h2>Nierówność: f(x) = x² - 4 &gt; 0</h2>
+<div id="box" class="jxgbox" style="width:500px; height:400px;"></div>
+
+<script>
+const board = JXG.JSXGraph.initBoard('box', {
+  boundingbox: [-6, 10, 6, -10],
+  axis: true,
+  showNavigation: false
+});
+
+const f = (x) => x*x - 4;
+
+// wykres funkcji
+const graph = board.create('functiongraph', [f, -6, 6], {strokeColor: '#0074D9', strokeWidth: 2});
+
+// zaznaczamy obszar gdzie f(x) > 0
+const shade = board.create('functiongraph', [function(x){ return f(x)>0 ? 10 : NaN; }, -6, 6], {
+  strokeWidth: 0,
+  fillColor: 'rgba(0, 150, 0, 0.2)',
+  fillOpacity: 0.3
+});
+
+// linie pomocnicze dla miejsc zerowych
+board.create('line', [[-2, -10], [-2, 10]], {strokeColor:'gray', dash:2});
+board.create('line', [[2, -10], [2, 10]], {strokeColor:'gray', dash:2});
+board.create('text', [-2.3, -9, 'x = -2']);
+board.create('text', [1.7, -9, 'x = 2']);
+</script>
+
+</body>
+</html>

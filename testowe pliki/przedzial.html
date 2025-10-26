@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Przedział na osi liczbowej</title>
+<style>
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fafafa;
+    margin-top: 50px;
+  }
+  svg {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
+  .interval {
+    stroke: #0074D9;
+    stroke-width: 4;
+  }
+  .axis {
+    stroke: black;
+    stroke-width: 1;
+  }
+</style>
+</head>
+<body>
+
+<h2>Przedział: (-2, 3]</h2>
+
+<svg width="400" height="100">
+  <!-- Oś liczbowa -->
+  <line x1="20" y1="50" x2="380" y2="50" class="axis"/>
+
+  <!-- Przedział (-2, 3] -->
+  <line x1="80" y1="50" x2="300" y2="50" class="interval"/>
+
+  <!-- Kresy -->
+  <circle cx="80" cy="50" r="6" fill="white" stroke="#0074D9" stroke-width="3"/> <!-- otwarte -->
+  <circle cx="300" cy="50" r="6" fill="#0074D9" /> <!-- domknięte -->
+
+  <!-- Opisy -->
+  <text x="70" y="75">-2</text>
+  <text x="295" y="75">3</text>
+</svg>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interaktywny wykres funkcji kwadratowej</title>
+
+  <!-- JSXGraph (lekka biblioteka do wykresów matematycznych) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css">
+  <script src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fafafa;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 40px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .controls {
+      margin: 20px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 300px;
+    }
+
+    .controls label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    input[type="range"] {
+      width: 180px;
+    }
+
+    #box {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Funkcja kwadratowa: f(x) = a·x² + b·x + c</h1>
+
+  <div class="controls">
+    <label>a = <span id="a-val">1</span>
+      <input id="a" type="range" min="-3" max="3" step="0.1" value="1">
+    </label>
+    <label>b = <span id="b-val">0</span>
+      <input id="b" type="range" min="-5" max="5" step="0.1" value="0">
+    </label>
+    <label>c = <span id="c-val">0</span>
+      <input id="c" type="range" min="-5" max="5" step="0.1" value="0">
+    </label>
+  </div>
+
+  <div id="box" class="jxgbox" style="width:500px; height:400px;"></div>
+
+  <script>
+    // Inicjalizacja planszy JSXGraph
+    const board = JXG.JSXGraph.initBoard('box', {
+      axis: true,
+      boundingbox: [-10, 10, 10, -10],
+      showCopyright: false,
+      showNavigation: false
+    });
+
+    // Domyślne wartości współczynników
+    let a = 1, b = 0, c = 0;
+
+    // Definicja funkcji kwadratowej
+    const f = (x) => a * x * x + b * x + c;
+
+    // Rysujemy wykres
+    let curve = board.create('functiongraph', [f, -10, 10], {
+      strokeColor: '#0074D9',
+      strokeWidth: 2
+    });
+
+    // Funkcja aktualizująca wykres po zmianie suwaków
+    function updateGraph() {
+      a = parseFloat(document.getElementById('a').value);
+      b = parseFloat(document.getElementById('b').value);
+      c = parseFloat(document.getElementById('c').value);
+
+      // Aktualizacja wartości tekstowych
+      document.getElementById('a-val').textContent = a;
+      document.getElementById('b-val').textContent = b;
+      document.getElementById('c-val').textContent = c;
+
+      // Usunięcie starego wykresu i narysowanie nowego
+      board.removeObject(curve);
+      curve = board.create('functiongraph', [f, -10, 10], {
+        strokeColor: '#0074D9',
+        strokeWidth: 2
+      });
+    }
+
+    // Obsługa zmian suwaków
+    ['a', 'b', 'c'].forEach(id => {
+      document.getElementById(id).addEventListener('input', updateGraph);
+    });
+  </script>
+</body>
+</html>
