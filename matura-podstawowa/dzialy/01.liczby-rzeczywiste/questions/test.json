@@ -4,6 +4,7 @@
         "containerId": "zadania",
         "question": "Oblicz $(\\frac{3}{5} + \\frac{2}{5}) : (\\frac{1}{2})$",
         "latexAnswer": "10",
-        "explanation": ""
+        "explanation": "",
+        "maturaInfo": "tutaj jest infor z jakiej to matury"
     }
 ]

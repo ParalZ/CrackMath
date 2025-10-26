@@ -366,3 +366,24 @@ summary {
   animation: button-pop 0.2s;
 }
 
+.zadanie-heading {
+  display: flex;
+  align-items: center;
+  gap: 3rem; /* space between number and matura info */
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+  color: #222;
+}
+
+/* Zadanie number bold (optional) */
+.zadanie-heading .zadanie-number {
+  font-weight: bold;
+}
+
+/* Matura info — not bold, slightly smaller, gray */
+.zadanie-heading .matura-info {
+  font-weight: normal;
+  font-size: 1.2rem;
+  color: #383838;
+}
+

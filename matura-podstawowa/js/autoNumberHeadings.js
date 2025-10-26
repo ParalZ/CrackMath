@@ -22,7 +22,10 @@ function numberZadaniaHeadings(){
   if(!zadaniaSection) return;
   zadaniaSection.querySelectorAll("h2").forEach(h2 => {
     counter++;
-    h2.textContent = `Zadanie ${counter}`;
-    h2.style.display = "grid";
+    const numberSpan = h2.querySelector(".zadanie-number");
+    if(numberSpan){
+      numberSpan.textContent = `Zadanie ${counter}`;
+    }
+    h2.style.display = "flex";
   });
 }

@@ -80,7 +80,7 @@ function showMultipleChoiceAnswer(latexAnswer, resultId){
   resultElem.classList.add("correct-anim");
 }
 
-function addOpenQuestion(containerId, questionText,latexAnswer, solutionText) {
+function addOpenQuestion(containerId, questionText,latexAnswer, solutionText="", maturaInfo="") {
   //replacing single \ with double \\ 
   // cause inner html is treated like a string so first \ escapes the second \ so the
   // latexAnswerReplaced becomes for example \sqrt{3} which is a proper latex represantation
@@ -89,7 +89,10 @@ function addOpenQuestion(containerId, questionText,latexAnswer, solutionText) {
   const div = document.createElement('div');
   div.className = 'question-block';
   div.innerHTML = `
-    <h2 style="display:none;"></h2>
+    <h2 style="display:none;" class="zadanie-heading">
+        <span class="zadanie-number"></span>
+        <span class="matura-info">${maturaInfo}</span>
+    </h2>
     <p class="open-question">${questionText}</p>
     <div class="open-question">
       <math-field></math-field>

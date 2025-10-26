@@ -1,6 +1,6 @@
 const questionHandlers = {
   open :function(q){
-    addOpenQuestion(q.containerId,q.question, q.latexAnswer, q.explanation);
+    addOpenQuestion(q.containerId,q.question, q.latexAnswer, q.explanation,q.maturaInfo);
   },
   multipleChoice :function(q){
     if(!(q.containerId && q.question && q.latexAnswer && q.A && q.B && q.C && q.D && q.correctLetter)){

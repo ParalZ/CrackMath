@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Podstawy</title>
+  <link rel="stylesheet" href="../matura-podstawowa/style.css" />
+</head>
+
+
+<body>
+  <!--Dashboard-->
+  <div class="dashboard">
+    <a href="../../../index.html">Matura Podstawowa 2026</a>
+    <a href="#zadania-section" class="jump-btn">Przejdź do sekcji "Zadania"</a>
+  </div>
+  <!--footer-bar-->
+  <div class="footer-bar">
+    <a href="../../to_be_developed.html">Poprzednia Strona</a>
+    <a href="../../to_be_developed.html">Następna Strona</a>
+  </div>
+  <!--latex-converted-to-html-->
+  <div class="theory-section" id="theory-section">
+    <!--HERE copy latex converted html-->
+    <!--HERE copy latex converted html-->
+    <!--HERE copy latex converted html-->
+
+    <!--HERE copy latex converted html-->
+    <!--HERE copy latex converted html-->
+    <!--HERE copy latex converted html-->
+  </div>
+
+  <!--zadania-section-na-sam-koniec-->
+  <div id="zadania-section">
+    <hr>
+    <h1>Zadania</h1>
+    <div id="zadania">
+        <h2 class="zadanie-heading">
+            <span class="zadanie-number">Zadanie 1</span>
+            <span class="matura-info">[matura, maj 2021, zadanie 5. (1 pkt)]</span>
+        </h2>
+    <p class="open-question">Tutaj jest jakieś zadanko</p>
+    <div class="open-question">
+      <math-field></math-field>
+      <button onclick="checkAnswer('${latexAnswerReplaced}',this.closest('.question-block'))">Submit</button>
+      <button class="show-answer-btn" onclick="showOpenAnswer('${latexAnswerReplaced}',this.closest('.question-block'))">Answer</button>
+    </div>
+    <p class="result" style="visibility:hidden;">&nbsp;</p>
+    <p class="solution" style="display:none;">${solutionText}</p>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js">
+    //konfetti
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@cortex-js/compute-engine/dist/compute-engine.min.umd.js"></script>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/mathlive"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.2/dist/purify.min.js"></script>
+  <script src="../../js/utils/safeHTML.js"></script>
+  <script src="../../js/script.js"></script>
+  <script src="../../js/autoNumberHeadings.js"></script>
+  <script src="../../js/loader.js"></script>
+  <script>
+      loadQuestions("questions/dodawanie_odejmowanie_jednomianow.json")
+      .then(() => {
+        numberZadaniaHeadings();
+      });
+  </script>
+  <script>
+  //being able to write inline math using LaTex, needed to add "\(...\)" as well as without it,
+  //if we do not add "\(...\)" to inline math 
+  //it is overwritten by the next script so we either have $$ inline math or "\(...\)"
+  //so we need it to have both at the same time
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],   // inline: $...$ or \(...\)
+    }
+  };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> //LaTex rendering on the website</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.min.js">//MathJax</script>
+</body>
+</html>
