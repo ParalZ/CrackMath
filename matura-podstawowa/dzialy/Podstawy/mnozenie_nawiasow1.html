@@ -29,23 +29,46 @@
     <!--HERE copy latex converted html-->
     <!--HERE copy latex converted html-->
     <!--HERE copy latex converted html-->
-    <h1 id="mnożenie-nawiasów">Mnożenie nawiasów</h2>
-    <hr />
-    <p>Teraz gdy wiemy jak mnożyć i dodawać jednomiany spróbujmy połączyć te
-    działania i zacząć mnożyć wyrażenia typu <span class="math inline">\((3x
-    - y) \cdot (2x + 7y)\)</span>. Otóż okazuje się że jest to tak naprawdę
-    coś co już robiliśmy tzn. żeby wymnożyć takie nawiasy mnożymy każdy
-    jednomian z <span class="math inline">\(1\)</span> nawiasu z każdym
-    jednomianem z <span class="math inline">\(2\)</span> nawiasu i to co nam
-    powstanie ze sobą dodajemy. Czyli przykładowo</p>
+    <h1>Mnożenie nawiasów 1</h1>
+    <hr>
+    <p>W momencie gdy wiemy jak dodawać i mnożyć jednomiany spróbujmy
+    połączyć te operacje. W tej lekcji będziemy się zajmować wyrażeniami
+    takimi że mamy jakiś jednomian i mamy go przemnożyć razy jakiś nawias,
+    najprostszy przykład takiego właśnie oto mnożenia to mnożenie liczb np.
+    <span class="math inline">\(4(2  + 3)\)</span> wiemy że to się równa z
+    jednej strony <span class="math inline">\(20\)</span> bo <span
+    class="math inline">\(2 + 3 = 5\)</span> a <span class="math inline">\(4
+    \cdot 5 = 20\)</span> ale nie zawsze wyrażenie w nawiasie będzie możliwe
+    do uproszczenia weźmy przykładowo <span class="math inline">\(2(4x +
+    y)\)</span> oczywiście już wiemy że <span class="math inline">\(4x +
+    y\)</span> już się nie da uprościć jak temu zaradzić? Wróćmy do naszego
+    przykładu na liczbach i spróbujmy go obliczyć w inny sposób tzn.
+    zauważmy że <span class="math inline">\(4(2 + 3) = 4 \cdot 2 + 4 \cdot 3
+    = 8 + 12 = 20\)</span> zatem gdy będziemy mieć takie właśnie oto
+    mnożenie to wystarczy przemnożyć każdy element nawiasu z tym co jest
+    poza nawiasem i je po prostu do siebie dodać. Wracamy do przykładu <span
+    class="math inline">\(2(4x + y)\)</span> bo już wiemy jak to wymnożyć
+    mianowicie <span class="math inline">\(2(4x + y) = 2 \cdot 4x + 2 \cdot
+    y = 8x + 2y\)</span>. Spójrzmy teraz na przykłady</p>
     <h3 id="przykład">Przykład</h3>
-    <p><span class="math display">\[(3x - y)(2x + 7y) = 3x \cdot 2x + 3x
-    \cdot 7y + (-y) \cdot 2x + (-y) \cdot 7y = 6x^2 +12xy - 2xy -7y^2 = 6x^2
-    + 10xy -7y^2\]</span> <span class="math display">\[(4ab + b)(a + 2b) =
-    4ab \cdot a + 4ab \cdot 2b + b \cdot a + b \cdot 2b = 4a^2b +8ab^2 + ab
-    + 2b^2\]</span> <span class="math display">\[(3xy^2 - 10x)(2xy + 3y) =
-    3xy^2 \cdot 2xy + 3xy^2 \cdot 3y + (-10x) \cdot 2xy + (-10x) \cdot 3y =
-    6x^2y^3 + 9xy^3 -20x^2y -20xy\]</span></p>
+    <p><span class="math display">\[3(x + 17y) = 3 \cdot x + 3 \cdot 17y =
+    3x + 51y\]</span> <span class="math display">\[3x(1 - 2y) = 3x \cdot 1 +
+    3x \cdot (-2y) = 3x -6xy\]</span> <span
+    class="math display">\[12a^2(\frac{1}{3}a^4b + \frac{1}{2}b + 2a^2) =
+    12a^2 \cdot \frac{1}{3}a^4b +  12a^2 \cdot \frac{1}{2}b +  12a^2 \cdot
+    2a^2 = 4a^6b + 6a^2b + 24a^4\]</span></p>
+    <div class="tcolorbox">
+    <div class="boldWord">
+    <p>Uwaga!</p>
+    </div>
+    <p>Gdy mamy mnożenie <span class="math inline">\(2(ab + 3xy)\)</span> to
+    mnożymy to jak wcześniej czyli każdy z wyrazów w środku nawiasu przez to
+    co stoi poza nawiasem czyli mamy <span class="math inline">\(2(ab + 3xy)
+    = 2 \cdot ab + 2 \cdot 3xy = 2ab + 6xy\)</span>. Pod żadnym pozorem nie
+    robimy tak: <span class="math display">\[2(ab + 3xy) \neq 4ab +
+    12xy\]</span> Bo <span class="math inline">\(ab\)</span> i <span
+    class="math inline">\(xy\)</span> traktujemy jako jedną zmienną.</p>
+    </div>
     <!--HERE copy latex converted html-->
     <!--HERE copy latex converted html-->
     <!--HERE copy latex converted html-->
@@ -71,7 +94,7 @@
   <script src="../../js/autoNumberHeadings.js"></script>
   <script src="../../js/loader.js"></script>
   <script>
-      loadQuestions("questions/mnozenie_nawiasow.json")
+      loadQuestions("questions/mnozenie_nawiasow1.json")
       .then(() => {
         numberZadaniaHeadings();
       });

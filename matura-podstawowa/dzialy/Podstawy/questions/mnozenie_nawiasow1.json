@@ -1,0 +1,122 @@
+[
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$2(a+b)$$",
+        "latexAnswer": "2a+2b"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$4(x+y)$$",
+        "latexAnswer": "4x+4y"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$3a(b+c)$$",
+        "latexAnswer": "3ab+3ac"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$5a(a+b)$$",
+        "latexAnswer": "5a^2+5ab"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$6x(2x+y)$$",
+        "latexAnswer": "12x^2+6xy"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$3y(4a-2b)$$",
+        "latexAnswer": "12ay-6by"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$2x(x+3y+z)$$",
+        "latexAnswer": "2x^2+6xy+2xz"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$5(x+3y+2z)$$",
+        "latexAnswer": "5x+15y+10z"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$7a(x-7y+4z)$$",
+        "latexAnswer": "7ax-49ay+28az"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$-3b(2a+5)$$",
+        "latexAnswer": "-6ab-15b"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$2x^2(3x-4y)$$",
+        "latexAnswer": "6x^3-8x^2y"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$-4ab(a-2b)$$",
+        "latexAnswer": "-4a^2b+8ab^2"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$3x^2y(x+y)$$",
+        "latexAnswer": "3x^3y+3x^2y^2"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$-2a^2(3a-5b+c)$$",
+        "latexAnswer": "-6a^3+10a^2b-2a^2c"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$4xy(x-2y+3z)$$",
+        "latexAnswer": "4x^2y-8xy^2+12xyz"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$-5x^2y(2x+3y-4z)$$",
+        "latexAnswer": "-10x^3y-15x^2y^2+20x^2yz"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$6a^2b(3a-2b+4c)$$",
+        "latexAnswer": "18a^3b-12a^2b^2+24a^2bc"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$-2xy^2(x^2-y+3z)$$",
+        "latexAnswer": "-2x^3y^2+2xy^3-6xy^2z"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{3}{2}a^2(4a-6b+c)$$",
+        "latexAnswer": "6a^3-9a^2b+1.5a^2c"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$-3x^2y^2(2x^2-3xy+y^2)$$",
+        "latexAnswer": "-6x^4y^2+9x^3y^3-3x^2y^4"
+    }
+]

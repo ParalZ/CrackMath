@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Podstawy</title>
+  <link rel="stylesheet" href="../../css/base/baseStyles.css" />
+  <link rel="stylesheet" href="../../css/base/links.css" />
+  <link rel="stylesheet" href="../../css/base/utilities.css" />
+  <link rel="stylesheet" href="../../css/components/animations.css" />
+  <link rel="stylesheet" href="../../css/components/theorySection.css" />
+  <link rel="stylesheet" href="../../css/components/zadaniaSection.css" />
+  <link rel="stylesheet" href="../../css/layout/dashboard.css" />
+  <link rel="stylesheet" href="../../css/layout/footer.css" />
+</head>
+
+
+<body>
+  <!--Dashboard-->
+  <div class="dashboard">
+    <a href="../../../index.html">Matura Podstawowa 2026</a>
+    <a href="#zadania-section" class="jump-btn">Przejdź do sekcji "Zadania"</a>
+  </div>
+  <!--footer-bar-->
+  <div class="footer-bar">
+    <a href="../../to_be_developed.html">Poprzednia Strona</a>
+    <a href="../../to_be_developed.html">Następna Strona</a>
+  </div>
+  <!--latex-converted-to-html-->
+  <div class="theory-section" id="theory-section">
+    <!--HERE copy latex converted html-->
+    <!--HERE copy latex converted html-->
+    <!--HERE copy latex converted html-->
+  <h1 id="mnożenie-nawiasów">Mnożenie nawiasów 2</h1>
+  <hr>
+  <p>Teraz gdy wiemy jak mnożyć i dodawać jednomiany spróbujmy połączyć te
+  działania i zacząć mnożyć wyrażenia typu <span class="math inline">\((3x
+  - y) \cdot (2x + 7y)\)</span>. Otóż okazuje się że jest to tak naprawdę
+  coś co już robiliśmy tzn. żeby wymnożyć takie nawiasy mnożymy każdy
+  jednomian z <span class="math inline">\(1\)</span> nawiasu z każdym
+  jednomianem z <span class="math inline">\(2\)</span> nawiasu i to co nam
+  powstanie ze sobą dodajemy. Czyli przykładowo</p>
+  <h3 id="przykład">Przykład</h3>
+  <p><span class="math display">\[(3x - y)(2x + 7y) = 3x \cdot 2x + 3x
+  \cdot 7y + (-y) \cdot 2x + (-y) \cdot 7y = 6x^2 +12xy - 2xy -7y^2 = 6x^2
+  + 10xy -7y^2\]</span> <span class="math display">\[(4ab + b)(a + 2b) =
+  4ab \cdot a + 4ab \cdot 2b + b \cdot a + b \cdot 2b = 4a^2b +8ab^2 + ab
+  + 2b^2\]</span> <span class="math display">\[(3xy^2 - 10x)(2xy + 3y) =
+  3xy^2 \cdot 2xy + 3xy^2 \cdot 3y + (-10x) \cdot 2xy + (-10x) \cdot 3y =
+  6x^2y^3 + 9xy^3 -20x^2y -20xy\]</span></p>
+    <!--HERE copy latex converted html-->
+    <!--HERE copy latex converted html-->
+    <!--HERE copy latex converted html-->
+  </div>
+
+  <!--zadania-section-na-sam-koniec-->
+  <div id="zadania-section">
+    <hr>
+    <h1>Zadania</h1>
+    <div id="zadania"></div>
+  </div>
+  
+  
+  <!--Skrypty-->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js">//konfetti</script>
+  <script src="https://cdn.jsdelivr.net/npm/@cortex-js/compute-engine/dist/compute-engine.min.umd.js">//computeEngine</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathlive">//mathLive</script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.2/dist/purify.min.js">//purify for safeHTML</script>
+  <script src="../../js/utils/safeHTML.js"></script>
+  <script src="../../js/multipleChoice.js"></script>
+  <script src="../../js/openQuestions.js"></script>
+  <script src="../../js/buttonAnimation.js"></script>
+  <script src="../../js/autoNumberHeadings.js"></script>
+  <script src="../../js/loader.js"></script>
+  <script>
+      loadQuestions("questions/mnozenie_nawiasow2.json")
+      .then(() => {
+        numberZadaniaHeadings();
+      });
+  </script>
+  <script>
+  //being able to write inline math using LaTex, needed to add "\(...\)" as well as without it,
+  //if we do not add "\(...\)" to inline math 
+  //it is overwritten by the next script so we either have $$ inline math or "\(...\)"
+  //so we need it to have both at the same time
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],   // inline: $...$ or \(...\)
+    }
+  };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> //LaTex rendering on the website</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.min.js">//MathJax</script>
+</body>
+</html>
