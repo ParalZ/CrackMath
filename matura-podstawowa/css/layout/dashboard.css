@@ -1,0 +1,19 @@
+.dashboard {
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #222;
+  color: #FCFAFA;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: center; /* center items horizontally */
+  align-items: center;     /* center items vertically */
+  gap: 2rem;               /* space between Home and Login */
+  z-index: 100;
+}
+
+html {
+  scroll-padding-top: 5rem; /* adjust to your dashboard height */
+}

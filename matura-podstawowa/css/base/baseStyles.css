@@ -1,0 +1,22 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  padding: 4rem 10rem 6rem 10rem;
+  background-color: #f0f4ff;
+  min-height: 100vh;
+  margin: 0;
+
+}
+
+h1{
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  color: #222222;
+  letter-spacing: 1px;
+}
+
+hr {
+  border-top: 2px solid #51a2ff;
+  margin: 2rem 0;
+}

@@ -1,0 +1,36 @@
+.theory-section p{
+  padding-left: 3%;
+  padding-right: 3%;
+  font-size: 1.2rem;
+}
+
+.theory-section h2{
+  display:flex;
+  color: #222;
+  margin-bottom: 1em;
+  font-size: 1.5rem;
+}
+.theory-section h3{
+  display:flex;
+  color: #222;
+  margin-left: 4rem;
+}
+
+
+.theory-section ol{
+  font-size: 1.2rem;
+  padding-left: 10%;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  gap: 1rem;
+}
+
+.tcolorbox p{
+  font-size: 1.2rem;
+}
+
+.tcolorbox {
+  border: 2px solid #222;     /* thickness, style, and color */
+  padding: 10px;              /* space between text and border */    /* shrink-wrap the border to content */
+  border-radius: 8px; /* rounded frame */
+}

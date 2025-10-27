@@ -8,7 +8,7 @@
 
 
 ## Bugs to fix
-- po kliknieciu przejdz do sekcji zadania i kliknieciu poprzednia strona cofa do poczatku sekcji a nie poprzedniej strony
+
 
 ## colors
 #222222 / #3a506b for h2 headings and distinct texts 

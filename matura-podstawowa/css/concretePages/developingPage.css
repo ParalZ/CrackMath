@@ -1,0 +1,10 @@
+.developing-page {
+  text-align: center;
+}
+
+.developing-page a {
+  color: #51A2FF;
+}
+.developing-page a:hover{
+  color: #0063CC;
+}
