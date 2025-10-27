@@ -1,0 +1,110 @@
+[
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Rozwiąż równanie $$x + 3 = 6$$",
+        "latexAnswer": "3"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Rozwiąż równanie $$2x + 3 = 7$$",
+        "latexAnswer": "2"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Rozwiąż równanie $$5x - 2 = 8$$",
+        "latexAnswer": "2"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Rozwiąż równanie $$3x + 7 = 16$$",
+        "latexAnswer": "3"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Rozwiąż równanie $$4x - 5 = 11$$",
+        "latexAnswer": "4"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Rozwiąż równanie $$2x + 3x - 3 = 7x - 2$$",
+        "latexAnswer": "-\\frac{1}{2}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Rozwiąż równanie $$6x + 2 = 3x + 14$$",
+        "latexAnswer": "4"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Rozwiąż równanie $$5x - 7 = 3x + 9$$",
+        "latexAnswer": "8"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Rozwiąż równanie $$7x + 4 = 2x + 19$$",
+        "latexAnswer": "3"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Rozwiąż równanie $$8x - 6 = 2x + 18$$",
+        "latexAnswer": "4"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Rozwiąż równanie $$9x + 5 = 4x + 20$$",
+        "latexAnswer": "3"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Rozwiąż równanie $$3x - 7 = 2x + 5$$",
+        "latexAnswer": "12"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Rozwiąż równanie $$4x + 2x - 5 = 3x + 7$$",
+        "latexAnswer": "4"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Rozwiąż równanie $$6x - 3x + 4 = 2x + 10$$",
+        "latexAnswer": "6"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Rozwiąż równanie $$7x - 4 = 2x + 13$$",
+        "latexAnswer": "\\frac{17}{5}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Rozwiąż równanie $$8x + 5 - 3x = 2x + 21-4x$$",
+        "latexAnswer": "\\frac{16}{7}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Rozwiąż równanie $$5x + 12 - 3x = 2x + 13 -x$$",
+        "latexAnswer": "1"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Rozwiąż równanie $$9x - 7 + 2x = 6x + 14$$",
+        "latexAnswer": "\\frac{21}{5}"
+    }
+]
