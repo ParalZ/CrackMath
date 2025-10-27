@@ -1,0 +1,122 @@
+[
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Skróć ułamek $$\\frac{2}{4}$$",
+        "latexAnswer": "\\frac{1}{2}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Skróć ułamek $$\\frac{81}{27}$$",
+        "latexAnswer": "3"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Skróć ułamek $$\\frac{9}{6}$$",
+        "latexAnswer": "\\frac{3}{2}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Skróć ułamek $$\\frac{12}{16}$$",
+        "latexAnswer": "\\frac{3}{4}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Skróć ułamek $$\\frac{18}{24}$$",
+        "latexAnswer": "\\frac{3}{4}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Skróć ułamek $$\\frac{20}{25}$$",
+        "latexAnswer": "\\frac{4}{5}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Skróć ułamek $$\\frac{15}{35}$$",
+        "latexAnswer": "\\frac{3}{7}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Skróć ułamek $$\\frac{14}{49}$$",
+        "latexAnswer": "\\frac{2}{7}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Skróć ułamek $$\\frac{32}{40}$$",
+        "latexAnswer": "\\frac{4}{5}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Skróć ułamek $$\\frac{45}{60}$$",
+        "latexAnswer": "\\frac{3}{4}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Skróć ułamek $$\\frac{50}{100}$$",
+        "latexAnswer": "\\frac{1}{2}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Skróć ułamek $$\\frac{63}{81}$$",
+        "latexAnswer": "\\frac{7}{9}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Skróć ułamek $$\\frac{27}{36}$$",
+        "latexAnswer": "\\frac{3}{4}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Skróć ułamek $$\\frac{40}{60}$$",
+        "latexAnswer": "\\frac{2}{3}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Skróć ułamek $$\\frac{18}{27}$$",
+        "latexAnswer": "\\frac{2}{3}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Skróć ułamek $$\\frac{56}{64}$$",
+        "latexAnswer": "\\frac{7}{8}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Skróć ułamek $$\\frac{81}{90}$$",
+        "latexAnswer": "\\frac{9}{10}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Skróć ułamek $$\\frac{100}{120}$$",
+        "latexAnswer": "\\frac{5}{6}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Skróć ułamek $$\\frac{48}{64}$$",
+        "latexAnswer": "\\frac{3}{4}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Skróć ułamek $$\\frac{72}{96}$$",
+        "latexAnswer": "\\frac{3}{4}"
+    }
+]

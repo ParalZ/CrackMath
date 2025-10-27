@@ -1,0 +1,194 @@
+[
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{1}{2} + \\frac{1}{4}$$",
+        "latexAnswer": "\\frac{3}{4}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{1}{3} - \\frac{1}{5}$$",
+        "latexAnswer": "\\frac{2}{15}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{1}{2} * \\frac{3}{7}$$",
+        "latexAnswer": "\\frac{3}{14}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{2}{3} * \\frac{3}{4}$$",
+        "latexAnswer": "\\frac{1}{2}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{5}{6} + \\frac{1}{3}$$",
+        "latexAnswer": "\\frac{7}{6}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{7}{8} - \\frac{1}{2}$$",
+        "latexAnswer": "\\frac{3}{8}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{2}{5} * \\frac{5}{6}$$",
+        "latexAnswer": "\\frac{1}{3}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{3}{7} * \\frac{14}{9}$$",
+        "latexAnswer": "\\frac{2}{3}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{1}{2} + \\frac{2}{3}$$",
+        "latexAnswer": "\\frac{7}{6}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{5}{9} - \\frac{2}{3}$$",
+        "latexAnswer": "-\\frac{1}{9}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{2}{3} * \\frac{3}{8}$$",
+        "latexAnswer": "\\frac{1}{4}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{7}{10} * \\frac{5}{14}$$",
+        "latexAnswer": "\\frac{1}{4}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{(\\frac{1}{2})}{(\\frac{2}{1})}$$",
+        "latexAnswer": "\\frac{1}{4}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{(\\frac{3}{5})}{(\\frac{6}{7})}$$",
+        "latexAnswer": "\\frac{7}{10}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{(\\frac{7}{8})}{(\\frac{14}{3})}$$",
+        "latexAnswer": "\\frac{3}{16}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{(\\frac{1}{3})}{(\\frac{9}{4})}$$",
+        "latexAnswer": "\\frac{4}{27}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{(\\frac{5}{6})}{(\\frac{10}{9})}$$",
+        "latexAnswer": "\\frac{3}{4}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{(\\frac{2}{7})}{(\\frac{4}{5})}$$",
+        "latexAnswer": "\\frac{5}{14}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{(\\frac{3}{4})}{(\\frac{9}{8})}$$",
+        "latexAnswer": "\\frac{2}{3}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{(\\frac{1}{2})}{4}$$",
+        "latexAnswer": "\\frac{1}{8}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{6}{(\\frac{1}{4})}$$",
+        "latexAnswer": "24"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{(\\frac{2}{3})}{5}$$",
+        "latexAnswer": "\\frac{2}{15}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{7}{(\\frac{2}{3})}$$",
+        "latexAnswer": "\\frac{21}{2}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{(\\frac{5}{8})}{(\\frac{10}{3})}$$",
+        "latexAnswer": "\\frac{3}{16}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{(\\frac{3}{7})}{2}$$",
+        "latexAnswer": "\\frac{3}{14}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{8}{(\\frac{4}{5})}$$",
+        "latexAnswer": "10"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{(\\frac{9}{10})}{(\\frac{3}{5})}$$",
+        "latexAnswer": "\\frac{3}{2}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{(\\frac{7}{12})}{(\\frac{14}{9})}$$",
+        "latexAnswer": "\\frac{3}{8}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{(\\frac{5}{6})}{3}$$",
+        "latexAnswer": "\\frac{5}{18}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{12}{(\\frac{2}{7})}$$",
+        "latexAnswer": "42"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{(\\frac{4}{9})}{(\\frac{8}{15})}$$",
+        "latexAnswer": "\\frac{5}{6}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$\\frac{(\\frac{3}{5})}{(\\frac{15}{8})}$$",
+        "latexAnswer": "\\frac{8}{25}"
+    }
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Zamień na ułamek zwykły: $$3\\frac{1}{2}$$",
+        "latexAnswer": "\\frac{7}{2}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Zamień na ułamek zwykły: $$4\\frac{7}{3}$$",
+        "latexAnswer": "\\frac{19}{3}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Zamień na ułamek zwykły: $$0{,}1$$",
+        "latexAnswer": "\\frac{1}{10}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Zamień na ułamek zwykły: $$0{,}2$$",
+        "latexAnswer": "\\frac{1}{5}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Zamień na ułamek zwykły: $$0{,}25$$",
+        "latexAnswer": "\\frac{1}{4}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Zamień na ułamek zwykły: $$0{,}5$$",
+        "latexAnswer": "\\frac{1}{2}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Zamień na ułamek zwykły: $$0{,}75$$",
+        "latexAnswer": "\\frac{3}{4}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Zamień na ułamek zwykły: $$0{,}125$$",
+        "latexAnswer": "\\frac{1}{8}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Zamień na ułamek zwykły: $$0{,}2\\overline{3}$$",
+        "latexAnswer": "\\frac{7}{30}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Zamień na ułamek zwykły: $$0{,}23$$",
+        "latexAnswer": "\\frac{23}{100}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Zamień na ułamek zwykły: $$0{,}125$$",
+        "latexAnswer": "\\frac{1}{8}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Zamień na ułamek zwykły: $$1{,}23$$",
+        "latexAnswer": "\\frac{123}{100}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Zamień na ułamek zwykły: $$2{,}5$$",
+        "latexAnswer": "\\frac{5}{2}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Zamień na ułamek zwykły: $$3{,}125$$",
+        "latexAnswer": "\\frac{25}{8}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Zamień na ułamek zwykły: $$7{,}2$$",
+        "latexAnswer": "\\frac{36}{5}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Zamień na ułamek zwykły: $$42{,}5$$",
+        "latexAnswer": "\\frac{85}{2}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Zamień na ułamek zwykły: $$42{,}50$$",
+        "latexAnswer": "\\frac{85}{2}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Zamień na ułamek zwykły: $$42{,}500$$",
+        "latexAnswer": "\\frac{42500}{1000}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Zamień na ułamek zwykły: $$0{,}04$$",
+        "latexAnswer": "\\frac{1}{25}"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Zamień na ułamek zwykły: $$5{,}125$$",
+        "latexAnswer": "\\frac{41}{8}"
+    }
+]

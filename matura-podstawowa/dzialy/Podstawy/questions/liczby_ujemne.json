@@ -1,0 +1,122 @@
+[
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$-3-4$$",
+        "latexAnswer": "-7"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$-3 * (-4)$$",
+        "latexAnswer": "12"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$-(-5)$$",
+        "latexAnswer": "5"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$-(-(-5))$$",
+        "latexAnswer": "-5"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$-(-(-(-5)))$$",
+        "latexAnswer": "5"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$8 - (-9)$$",
+        "latexAnswer": "17"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$-1 * (-2) * -(-5)$$",
+        "latexAnswer": "10"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$-(-3) * (-4)$$",
+        "latexAnswer": "-12"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$-2 - (-7)$$",
+        "latexAnswer": "5"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$-(-8) + (-3)$$",
+        "latexAnswer": "5"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$-(-(-2)) * (-3)$$",
+        "latexAnswer": "6"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$-(-4 - (-6))$$",
+        "latexAnswer": "-2"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$-(-(-(-3))) * (-2)$$",
+        "latexAnswer": "-6"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$-(-7) - (-(-5))$$",
+        "latexAnswer": "2"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$-(-(-5)) + (-(-3))$$",
+        "latexAnswer": "-2"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$-(-2) * -(-3)$$",
+        "latexAnswer": "-6"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$-(-(-(-(-4))))$$",
+        "latexAnswer": "-4"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$-(-(-(-(-(-6)))))$$",
+        "latexAnswer": "6"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$-(-2) - (-(-3)) + (-4)$$",
+        "latexAnswer": "-3"
+    },
+    {
+        "type": "open",
+        "containerId": "zadania",
+        "question": "Oblicz $$-1 * (-2) * -(-5) * (-(-(-2)))$$",
+        "latexAnswer": "20"
+    }
+]
