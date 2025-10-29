@@ -79,7 +79,8 @@ button:hover{
   align-items: center;
   gap: 3rem; /* space between number and matura info */
   font-size: 1.5rem;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
+  margin-left: 10rem;
   color: #222;
 }
 

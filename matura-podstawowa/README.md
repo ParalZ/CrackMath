@@ -5,6 +5,9 @@
 ## Getting Started
 
 ## Future Development
+- add dashboard dynamically
+- add footer dynamically
+- add zadania section dynamically
 
 
 ## Bugs to fix
