@@ -25,11 +25,11 @@
   gap: 1rem;
 }
 
-.tcolorbox p{
+.theory-section .tcolorbox p{
   font-size: 1.2rem;
 }
 
-.tcolorbox {
+.theory-section .tcolorbox{
   border: 2px solid #222;     /* thickness, style, and color */
   padding: 10px;              /* space between text and border */    /* shrink-wrap the border to content */
   border-radius: 8px; /* rounded frame */
