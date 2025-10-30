@@ -5,9 +5,10 @@
 ## Getting Started
 
 ## Future Development
-- add dashboard dynamically
-- add footer dynamically
-- add zadania section dynamically
+- make sure to promise only the needed scripts by the lessonloader not all of them as not all of them are needed one by one
+- add css dynamically
+- hide the website before everything is loaded. and show it only when everything is loaded
+- understand fully lessonLoader.js
 
 
 ## Bugs to fix
