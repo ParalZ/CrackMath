@@ -2,7 +2,7 @@
     {
         "type": "open",
         "containerId": "zadania",
-        "question": "Oblicz $$2(a+b)$$",
+        "question": "Oblicz \\(2(a+b)\\)",
         "latexAnswer": "2a+2b"
     },
     {

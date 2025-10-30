@@ -14,8 +14,8 @@ function addOpenQuestion(containerId, questionText,latexAnswer, solutionText="",
     <p class="open-question">${questionText}</p>
     <div class="open-question">
       <math-field></math-field>
-      <button onclick="checkAnswer('${latexAnswerReplaced}',this.closest('.question-block'))">Submit</button>
-      <button class="show-answer-btn" onclick="showOpenAnswer('${latexAnswerReplaced}',this.closest('.question-block'))">Answer</button>
+      <button class="submit-btn" onclick="checkAnswer('${latexAnswerReplaced}',this.closest('.question-block'))">Sprawdź</button>
+      <button class="show-answer-btn" onclick="showOpenAnswer('${latexAnswerReplaced}',this.closest('.question-block'))">Odpowiedź</button>
     </div>
     <p class="result" style="visibility:hidden;">&nbsp;</p>
     <p class="solution" style="display:none;">${solutionText}</p>
@@ -57,7 +57,7 @@ function checkAnswer(latexAnswer, div) {
       console.log(expr1);
       console.log(expr2);
       if (expr1.isSame(expr2)) {
-        setSafeHTML(resultElem, `✅ Dobrze! Odpowiedź to: $${latexAnswer}$`);
+        setSafeHTML(resultElem, `✅ Dobrze! Odpowiedź to: \\(${latexAnswer}\\)`);
         resultElem.style.background = "";
         resultElem.style.color = "";
         resultElem.classList.add("correct-anim","correct");
@@ -82,7 +82,7 @@ function checkAnswer(latexAnswer, div) {
 function showOpenAnswer(latexAnswer,div){
   const resultElem = div.querySelector(".result");
   resultElem.classList.remove("invalid", "correct","correct-anim");
-  setSafeHTML(resultElem, `Odpowiedź: $${latexAnswer}$`);
+  setSafeHTML(resultElem, `Odpowiedź: \\(${latexAnswer}\\)`);
   resultElem.style.visibility = "visible";
   if (window.MathJax && window.MathJax.typeset) {
     MathJax.typeset([resultElem]);

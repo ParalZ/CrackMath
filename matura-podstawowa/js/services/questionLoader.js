@@ -1,3 +1,4 @@
+console.log("--- LOADER IS RUNNING ---");
 const questionHandlers = {
   open :function(q){
     addOpenQuestion(q.containerId,q.question, q.latexAnswer, q.explanation,q.maturaInfo);
