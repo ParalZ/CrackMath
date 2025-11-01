@@ -40,7 +40,6 @@ function checkAnswer(latexAnswer, div) {
 
   const expr1test = ce.parse("\\frac{2}{4}");
   const expr2test = ce.parse("\\frac{1}{2}");
-  console.log(expr1test.isSame(expr2test));
 
     const mf = div.querySelector("math-field");
     const resultElem = div.querySelector(".result");
@@ -54,8 +53,6 @@ function checkAnswer(latexAnswer, div) {
       const expr2 = ce.parse(mf.getValue("latex")).simplify();
       console.log(latexAnswer)
       console.log(mf.getValue("latex"))
-      console.log(expr1);
-      console.log(expr2);
       if (expr1.isSame(expr2)) {
         setSafeHTML(resultElem, `✅ Dobrze! Odpowiedź to: \\(${latexAnswer}\\)`);
         resultElem.style.background = "";

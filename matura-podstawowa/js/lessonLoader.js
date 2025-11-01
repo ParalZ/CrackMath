@@ -17,10 +17,6 @@ function loadScript(src) {
   });
 }
 
-// --- 1. Define Our Script Groups ---
-
-// These scripts have NO dependencies on each other and can be loaded
-// all at once, in parallel.
 const parallelScripts = [
   'https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js',
   'https://cdn.jsdelivr.net/npm/@cortex-js/compute-engine/dist/compute-engine.min.umd.js',
@@ -28,11 +24,10 @@ const parallelScripts = [
   'https://cdn.jsdelivr.net/npm/dompurify@3.0.2/dist/purify.min.js',
   'https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.min.js',
   "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
-  '../../js/utils/buttonAnimation.js' //
+  '../../js/utils/buttonAnimation.js',
+  '../../js/services/cssLoader.js'
 ];
 
-// These scripts DEPEND on each other or on the parallel scripts.
-// They will be loaded sequentially (one by one) AFTER the parallel group is done.
 const sequentialScripts = [
   '../../js/utils/safeHTML.js',           // Depends on DOMPurify
   '../../js/components/layout.js',             // Creates footer
@@ -44,31 +39,72 @@ const sequentialScripts = [
 ];
 
 
-// --- 2. Run the Optimized Loading Process ---
-
-(async function() {
+(async function () {
   try {
-    // Step 1: Load all parallel scripts and wait for ALL of them to finish.
-    // This is much faster.
-    console.log("--- Loading parallel scripts... ---");
-    await Promise.all(parallelScripts.map(loadScript));
-    
-    // Step 2: Now that all utilities are loaded, load our app scripts
-    // one by one to ensure dependencies are met.
-    console.log("--- Loading sequential scripts... ---");
-    for (const scriptPath of sequentialScripts) {
-      await loadScript(scriptPath);
-    }
-    
-    // --- ALL SCRIPTS ARE NOW LOADED AND EXECUTED ---
-    console.log("--- ALL SCRIPTS FINISHED, FIRING CALLBACK ---");
-    if (typeof runPageSpecificCode === 'function') {
-      runPageSpecificCode(); // Call the function from your HTML
-    } else {
-      console.error("runPageSpecificCode() is not defined in your HTML.");
-    }
-    
-  } catch (error) {
-    console.error("A script in the chain failed to load:", error);
+    await loadDependencies()
+    setupLessonConfig()
+    await runLessonLogic()
+    console.log("--- LESSON IS FULLY LOADED AND RUNNING ---");
   }
+  catch (error) {
+    console.error("A critical error occurred during lesson load:", error);
+  }
+  showPage()
 })();
+
+function showPage() {
+  document.body.style.visibility = 'visible';
+  document.body.style.opacity = '1';
+  console.log("--- PAGE IS NOW VISIBLE ---");
+}
+
+async function loadDependencies() {
+  console.log("--- Loading parallel scripts... ---");
+  await Promise.all(parallelScripts.map(loadScript));
+
+  console.log("--- Loading sequential scripts... ---");
+  for (const scriptPath of sequentialScripts) {
+    await loadScript(scriptPath);
+  }
+}
+
+function setupLessonConfig() {
+  if (window.lessonConfig) {
+    console.log("Manual config found in HTML. Using that.", window.lessonConfig);
+    return;
+  }
+
+  console.log("No manual config found. Generating automatically...");
+  try {
+    const path = window.location.pathname;
+    const htmlFile = path.split('/').pop();
+    const jsonFile = htmlFile.replace(".html", ".json");
+
+    window.lessonConfig = {
+      questionsJson: "questions/" + jsonFile
+    };
+
+    console.log("Auto-generated config:", window.lessonConfig);
+
+  }
+  catch (e) {
+    console.error("Failed to auto-generate lessonConfig:", e);
+    throw new Error("Config generation failed. Cannot continue.");
+  }
+}
+
+async function runLessonLogic() {
+  if (window.lessonConfig && window.lessonConfig.questionsJson) {
+
+    console.log(`Loading questions from: ${window.lessonConfig.questionsJson}`);
+
+    await loadQuestions(window.lessonConfig.questionsJson);
+
+    numberZadaniaHeadings();
+    console.log("Page logic executed successfully.");
+
+  }
+  else {
+    throw new Error("Lesson config is missing or invalid. Cannot load questions.");
+  }
+}
