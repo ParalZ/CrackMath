@@ -1,18 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
   <title>Podstawy</title>
-  <link rel="stylesheet" href="../../css/base/baseStyles.css" />
-  <link rel="stylesheet" href="../../css/base/utilities.css" />
-  <link rel="stylesheet" href="../../css/components/animations.css" />
-  <link rel="stylesheet" href="../../css/components/theorySection.css" />
-  <link rel="stylesheet" href="../../css/components/zadaniaSection.css" />
-  <link rel="stylesheet" href="../../css/layout/dashboard.css" />
-  <link rel="stylesheet" href="../../css/layout/footer.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interaktywna nauka matematyki do matury podstawowej.">
+  <link rel="stylesheet" href="../../css/base/loader.css" />
 </head>
 
 
 <body>
+
   <!--latex-converted-to-html-->
   <div class="theory-section" id="theory-section">
     <!--HERE copy latex converted html-->
@@ -23,17 +20,10 @@
     <!--HERE copy latex converted html-->
     <!--HERE copy latex converted html-->
   </div>
-
+  
+  
   <!--Skrypty-->
-    <script>
-    function runPageSpecificCode() {
-      // This code will be called by scriptLoader.js
-      loadQuestions("questions/dzialania_na_ulamkach.json")
-        .then(() => {
-          numberZadaniaHeadings();
-        });
-    }
-  </script>
   <script src="../../js/lessonLoader.js" defer></script>
+
 </body>
 </html>

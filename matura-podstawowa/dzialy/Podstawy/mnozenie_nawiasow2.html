@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
+
 <head>
   <title>Podstawy</title>
-  <link rel="stylesheet" href="../../css/base/baseStyles.css" />
-  <link rel="stylesheet" href="../../css/base/utilities.css" />
-  <link rel="stylesheet" href="../../css/components/animations.css" />
-  <link rel="stylesheet" href="../../css/components/theorySection.css" />
-  <link rel="stylesheet" href="../../css/components/zadaniaSection.css" />
-  <link rel="stylesheet" href="../../css/layout/dashboard.css" />
-  <link rel="stylesheet" href="../../css/layout/footer.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interaktywna nauka matematyki do matury podstawowej.">
+  <link rel="stylesheet" href="../../css/base/loader.css" />
 </head>
 
 
@@ -19,39 +16,32 @@
     <!--HERE copy latex converted html-->
     <!--HERE copy latex converted html-->
     <!--HERE copy latex converted html-->
-  <h1 id="mnożenie-nawiasów">Mnożenie nawiasów 2</h1>
-  <hr>
-  <p>Teraz gdy wiemy jak mnożyć i dodawać jednomiany spróbujmy połączyć te
-  działania i zacząć mnożyć wyrażenia typu <span class="math inline">\((3x
-  - y) \cdot (2x + 7y)\)</span>. Otóż okazuje się że jest to tak naprawdę
-  coś co już robiliśmy tzn. żeby wymnożyć takie nawiasy mnożymy każdy
-  jednomian z <span class="math inline">\(1\)</span> nawiasu z każdym
-  jednomianem z <span class="math inline">\(2\)</span> nawiasu i to co nam
-  powstanie ze sobą dodajemy. Czyli przykładowo</p>
-  <h3 id="przykład">Przykład</h3>
-  <p><span class="math display">\[(3x - y)(2x + 7y) = 3x \cdot 2x + 3x
-  \cdot 7y + (-y) \cdot 2x + (-y) \cdot 7y = 6x^2 +12xy - 2xy -7y^2 = 6x^2
-  + 10xy -7y^2\]</span> <span class="math display">\[(4ab + b)(a + 2b) =
-  4ab \cdot a + 4ab \cdot 2b + b \cdot a + b \cdot 2b = 4a^2b +8ab^2 + ab
-  + 2b^2\]</span> <span class="math display">\[(3xy^2 - 10x)(2xy + 3y) =
-  3xy^2 \cdot 2xy + 3xy^2 \cdot 3y + (-10x) \cdot 2xy + (-10x) \cdot 3y =
-  6x^2y^3 + 9xy^3 -20x^2y -20xy\]</span></p>
+    <h1 id="mnożenie-nawiasów">Mnożenie nawiasów 2</h1>
+    <hr>
+    <p>Teraz gdy wiemy jak mnożyć i dodawać jednomiany spróbujmy połączyć te
+      działania i zacząć mnożyć wyrażenia typu <span class="math inline">\((3x
+        - y) \cdot (2x + 7y)\)</span>. Otóż okazuje się że jest to tak naprawdę
+      coś co już robiliśmy tzn. żeby wymnożyć takie nawiasy mnożymy każdy
+      jednomian z <span class="math inline">\(1\)</span> nawiasu z każdym
+      jednomianem z <span class="math inline">\(2\)</span> nawiasu i to co nam
+      powstanie ze sobą dodajemy. Czyli przykładowo</p>
+    <h3 id="przykład">Przykład</h3>
+    <p><span class="math display">\[(3x - y)(2x + 7y) = 3x \cdot 2x + 3x
+        \cdot 7y + (-y) \cdot 2x + (-y) \cdot 7y = 6x^2 +12xy - 2xy -7y^2 = 6x^2
+        + 10xy -7y^2\]</span> <span class="math display">\[(4ab + b)(a + 2b) =
+        4ab \cdot a + 4ab \cdot 2b + b \cdot a + b \cdot 2b = 4a^2b +8ab^2 + ab
+        + 2b^2\]</span> <span class="math display">\[(3xy^2 - 10x)(2xy + 3y) =
+        3xy^2 \cdot 2xy + 3xy^2 \cdot 3y + (-10x) \cdot 2xy + (-10x) \cdot 3y =
+        6x^2y^3 + 9xy^3 -20x^2y -20xy\]</span></p>
     <!--HERE copy latex converted html-->
     <!--HERE copy latex converted html-->
     <!--HERE copy latex converted html-->
   </div>
-  
-  
+
+
   <!--Skrypty-->
-    <script>
-    function runPageSpecificCode() {
-      // This code will be called by scriptLoader.js
-      loadQuestions("questions/mnozenie_nawiasow2.json")
-        .then(() => {
-          numberZadaniaHeadings();
-        });
-    }
-  </script>
   <script src="../../js/lessonLoader.js" defer></script>
+
 </body>
+
 </html>
