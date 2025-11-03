@@ -18,24 +18,27 @@ function loadScript(src) {
 }
 
 const parallelScripts = [
-  'https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js',
   'https://cdn.jsdelivr.net/npm/@cortex-js/compute-engine/dist/compute-engine.min.umd.js',
-  'https://cdn.jsdelivr.net/npm/mathlive',
   'https://cdn.jsdelivr.net/npm/dompurify@3.0.2/dist/purify.min.js',
   'https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.min.js',
   "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
-  '../../js/utils/buttonAnimation.js',
-  '../../js/services/cssLoader.js'
+  '../../js/services/cssLoader.js',
+  '../../js/components/layout.js'
 ];
 
 const sequentialScripts = [
   '../../js/utils/safeHTML.js',           // Depends on DOMPurify
-  '../../js/components/layout.js',             // Creates footer
   '../../js/components/zadaniaSection.js',    // Depends on footer
   '../../js/utils/autoNumberHeadings.js',  // Defines numberZadaniaHeadings
   '../../js/components/multipleChoice.js',   // Depends on safeHTML
   '../../js/components/openQuestions.js',      // Depends on safeHTML, ComputeEngine
   '../../js/services/questionLoader.js'      // Depends on multipleChoice & openQuestions
+];
+
+const postLoadParallelScripts = [
+  'https://cdn.jsdelivr.net/npm/mathlive',
+  'https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js',
+  '../../js/utils/buttonAnimation.js'
 ];
 
 
@@ -50,6 +53,7 @@ const sequentialScripts = [
     console.error("A critical error occurred during lesson load:", error);
   }
   showPage()
+  runPostLoadLogic()
 })();
 
 function showPage() {
@@ -101,10 +105,25 @@ async function runLessonLogic() {
     await loadQuestions(window.lessonConfig.questionsJson);
 
     numberZadaniaHeadings();
+    numberTheoryHeadings();
     console.log("Page logic executed successfully.");
 
   }
   else {
     throw new Error("Lesson config is missing or invalid. Cannot load questions.");
+  }
+}
+
+/**
+ * Loads all non-essential scripts in the background 
+ * and runs any logic that depends on them.
+ */
+async function runPostLoadLogic() {
+  console.log("--- Loading non-critical background scripts...");
+  try {
+    await Promise.all(postLoadParallelScripts.map(loadScript));
+    console.log("--- Background scripts loaded ---");
+  } catch (error) {
+    console.warn("A non-critical background script failed to load:", error);
   }
 }

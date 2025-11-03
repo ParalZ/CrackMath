@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
   <title>Simple Web App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interaktywna nauka matematyki do matury podstawowej.">
+  
   <link rel="stylesheet" href="matura-podstawowa/css/base/baseStyles.css" />
   <link rel="stylesheet" href="matura-podstawowa/css/pages/mainPage.css" />
   <link rel="stylesheet" href="matura-podstawowa/css/base/utilities.css" />
   <link rel="stylesheet" href="matura-podstawowa/css/layout/dashboard.css" />
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  
+  <link rel="prefetch" href="https://cdn.jsdelivr.net/npm/@cortex-js/compute-engine/dist/compute-engine.min.umd.js" as="script" crossorigin="anonymous">
+  <link rel="prefetch" href="https://cdn.jsdelivr.net/npm/mathlive" as="script" crossorigin="anonymous">
+  <link rel="prefetch" href="https://cdn.jsdelivr.net/npm/dompurify@3.0.2/dist/purify.min.js" as="script" crossorigin="anonymous">
+  <link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.min.js" as="script" crossorigin="anonymous">
+  <link rel="prefetch" href="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" as="script" crossorigin="anonymous">
+  <link rel="prefetch" href="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js" as="script" crossorigin="anonymous">
 </head>
 
 
@@ -63,8 +75,6 @@
       </li>
     </ul>
   </div>
-
-  
-  <script src="matura-podstawowa/js/script.js"></script>
+  <script src="matura-podstawowa/js/services/linkPrefetcher.js" defer></script>
 </body>
 </html>

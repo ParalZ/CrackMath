@@ -5,8 +5,6 @@
 ## Getting Started
 
 ## Future Development
-- add css dynamically
-- hide the website before everything is loaded. and show it only when everything is loaded
 
 
 ## Bugs to fix

@@ -1,5 +1,5 @@
 //adding dynamically the counter to each section of the theory
-document.addEventListener("DOMContentLoaded", () => {
+function numberTheoryHeadings(){
   let count = 0;
   const theorySection = document.getElementById("theory-section");
   if(!theorySection) return;
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
       h2.textContent = `${count}) ${text}`;
     }
   });
-});
+}
 
 //adding counter to each zadanie
 function numberZadaniaHeadings(){

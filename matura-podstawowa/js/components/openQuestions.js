@@ -13,7 +13,7 @@ function addOpenQuestion(containerId, questionText,latexAnswer, solutionText="",
     </h2>
     <p class="open-question">${questionText}</p>
     <div class="open-question">
-      <math-field></math-field>
+      <math-field aria-label="Wpisz odpowiedź matematyczną"></math-field>
       <button class="submit-btn" onclick="checkAnswer('${latexAnswerReplaced}',this.closest('.question-block'))">Sprawdź</button>
       <button class="show-answer-btn" onclick="showOpenAnswer('${latexAnswerReplaced}',this.closest('.question-block'))">Odpowiedź</button>
     </div>
