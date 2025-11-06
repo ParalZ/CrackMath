@@ -1,5 +1,5 @@
 .zadania-section h2{
-  display:flex;
+  display:none;
   color: #222;
   margin-bottom: 1em;
   font-size: 1.5rem;
@@ -27,7 +27,7 @@ div.open-question,
 }
 
 .zadanie-heading {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 3rem; /* space between number and matura info */
   font-size: 1.5rem;

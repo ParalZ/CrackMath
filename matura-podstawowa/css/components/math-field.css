@@ -1,18 +1,35 @@
 math-field {
   width: 100%;
-  max-width: 300px; /* Optional upper limit */
-  box-sizing: border-box; /* ensures padding doesn’t add extra width */
+  max-width: 300px;
+  /* Optional upper limit */
+  box-sizing: border-box;
+  /* ensures padding doesn’t add extra width */
   padding: 0.5rem 1rem;
-  border: 1.5px solid #51A2FF;
+  border: 2px solid #51A2FF;
   border-radius: 6px;
   font-size: 1.5rem;
   transition: border-color 0.2s;
   outline: none;
   margin-right: 0.5rem;
+
+  display: inline-block;
+  vertical-align: middle;
+  /* Aligns it nicely with the buttons */
+  min-height: 65px;
+  /* (1.5rem font + 1rem padding + border) */
+
+  background: #FCFAFA;
+  
+  /* mathlive specific fields */
+  --selection-background-color: #70B3FF;
+  --contains-highlight-background-color: #70B3FF;
+
 }
 
+math-field:focus {
+  border-color: #222;
+}
 
-math-field:focus{
-  border-color: #0063CC;
-  background: #ECECF1;
+math-field::part(menu-toggle) {
+  display: none;
 }

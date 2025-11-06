@@ -1,17 +1,45 @@
 [
     {
         "type": "open",
-        "containerId": "zadania",
+        "containerId": "questions_1",
         "question": "Oblicz $$4x + 5x - 2x$$",
-        "latexAnswer": "7x",
-        "explanation": ""
+        "latexAnswer": "7x"
+    },
+    {
+        "type": "open",
+        "containerId": "questions_1",
+        "question": "Oblicz $$8m - 4m + 6n - 2n$$",
+        "latexAnswer": "4m + 4n"
+    },
+    {
+        "type": "open",
+        "containerId": "questions_2",
+        "question": "Oblicz $$3ab + 7ab + 2a + a + c$$",
+        "latexAnswer": "10ab + 3a +c"
+    },
+    {
+        "type": "open",
+        "containerId": "questions_2",
+        "question": "Oblicz $$2xy + 7xyz + xy$$",
+        "latexAnswer": "3xy+7xyz"
+    },
+    {
+        "type": "open",
+        "containerId": "questions_3",
+        "question": "Oblicz $$a^3 + 4a^3 + a^2 + a^2$$",
+        "latexAnswer": "5a^3+2a^2"
+    },
+    {
+        "type": "open",
+        "containerId": "questions_3",
+        "question": "Oblicz $$3x^2y^3 + 2x^3y^2 - 9x^2y^3$$",
+        "latexAnswer": "-6x^2y^3+2x^3y^2"
     },
     {
         "type": "open",
         "containerId": "zadania",
         "question": "Oblicz $$7a^2 - 3a^2 + 2a^2$$",
-        "latexAnswer": "6a^2",
-        "explanation": ""
+        "latexAnswer": "6a^2"
     },
     {
         "type": "open",
@@ -20,13 +48,7 @@
         "latexAnswer": "7xy",
         "explanation": ""
     },
-    {
-        "type": "open",
-        "containerId": "zadania",
-        "question": "Oblicz $$8m - 4m + 6n - 2n$$",
-        "latexAnswer": "4m + 4n",
-        "explanation": ""
-    },
+    
     {
         "type": "open",
         "containerId": "zadania",

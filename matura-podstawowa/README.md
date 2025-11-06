@@ -5,6 +5,9 @@
 ## Getting Started
 
 ## Future Development
+- style button colors and contrast
+- style mathfield better(make the background nicer, hide advanced math inputs if possible)
+- check how compute engine work percisely to make sure correct inputs are getting correct response
 
 
 ## Bugs to fix

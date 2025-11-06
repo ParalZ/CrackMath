@@ -21,7 +21,6 @@ function addOpenQuestion(containerId, questionText,latexAnswer, solutionText="",
     <p class="solution" style="display:none;">${solutionText}</p>
   `;
   container.appendChild(div);
-  showHeading(div);
 
   const inputElem = div.querySelector("math-field");
     inputElem.addEventListener('keydown',function(event){
@@ -92,12 +91,5 @@ function showSolution(div){
   const solutionElem = div.querySelector(".solution");
   if(!(solutionElem.getHTML() === "")){
     solutionElem.style.display = "grid";
-  }
-}
-
-function showHeading(div){
-  const heading = div.querySelector("h2");
-  if(!(heading.getHTML() === "")){
-    heading.style.display = "grid";
   }
 }

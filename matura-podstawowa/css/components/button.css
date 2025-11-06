@@ -17,3 +17,18 @@ button:hover{
 .button-pop{
   animation: button-pop 0.2s;
 }
+
+.submit-btn{
+  background: #3392FF;
+}
+
+.submit-btn:hover{
+  background: #0063CC;
+}
+.show-answer-btn{
+  background: #7853DF;
+}
+.show-answer-btn:hover{
+  background: #5D30D9;
+}
+

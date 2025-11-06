@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
   <title>Podstawy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,35 +16,97 @@
     <!--HERE copy latex converted html-->
     <!--HERE copy latex converted html-->
     <!--HERE copy latex converted html-->
-        <h1 id="dodawanie-i-odejmowanie-jednomianów">Dodawanie i odejmowanie jednomianów</h2>
-    <hr />
-    <p>Może i tytuł tej lekcji brzmi groźnie lecz nie taki straszny diabeł jak go malują. Ponieważ cała lekcja sprowadza się do faktu że możemy dodawać do siebie wyrażenia jeżeli są takie same. Zacznijmy zatem od początku jednomianami nazywamy wyrażenia nieformalnie mówiąc jest to jakaś liczba i obok niej stoją jakieś literki przykładowo</p>
-    <h3 id="przykład">Przykład</h3>
-    <p><span class="math display">\[\begin{align*}
-        3x \\
-        -2y \\
-        13ab\\
-        -\frac{3}{5}m^2n\\
-        \sqrt{2}pqr \\
-        2xy
-    \end{align*}\]</span> Teraz chcielibyśmy móc dodawać takie oto właśnie jednomiany ale jakie jednomiany możemy do siebie dodawać? Odpowiedź jest prosta myślmy o każdej kombinacji literek jak o jakimś owocu np. niech <span class="math inline">\(x\)</span> to będzie ilość jabłek a <span class="math inline">\(y\)</span> to będzie ilość gruszek wyrażenia <span class="math inline">\(x + y\)</span> w żaden sposób nie jesteśmy w stanie uprościć bo jest to suma wszystkich owoców po prostu ale np <span class="math inline">\(x + 2x =3x\)</span> ponieważ mamy najpierw <span class="math inline">\(x\)</span> jabłek i dodajemy <span class="math inline">\(2x\)</span> jabłek zatem ostatecznie będziemy mieć <span class="math inline">\(3x\)</span> jabłek. Zatem dodawać i odejmować jednomiany bezkarnie możemy tylko jeśli te literki co stoją obok liczby są takie same a resztę po prostu zostawiamy taka jaka jest. Czyli jak mamy jakieś dane wyrażenie i musimy je uprościć to szukamy jednomianów o wspólnych literkach upraszczamy je sobie i powtarzamy proces aż nie będziemy mogli nic więcej dalej zrobić. W praktyce jak to wygląda.</p>
-    <h3 id="przykład-1">Przykład</h3>
-    <p><span class="math display">\[3x + 2y - x + y - 3b = 2x + 3y - 3b\]</span> <span class="math display">\[-1 + 2a - a^2 + 7a + 1 + a^2 = 9a\]</span> <span class="math display">\[3x^2y + 7y + 2xy^2 - 4xy + 5y = 3x^2y + 12y + 2xy^2 - 4xy\]</span></p>
-    <div class="tcolorbox">
-    <div class="boldWord">
-    <p>Uwaga!</p>
-    </div>
-    <p>Wymagamy żeby te literki były dokładnie takie same czyli np.</p>
-    <p><span class="math display">\[a \neq a^2\]</span> <span class="math display">\[xy \neq x^2y \neq xy^2 \neq x^2y2\]</span> i takich wyrażeń pod żadnym pozorem nie możemy do siebie dodawać ani odejmować!</p>
-    </div>
-    <!--HERE copy latex converted html-->
-    <!--HERE copy latex converted html-->
-    <!--HERE copy latex converted html-->
+    <h1 id="dodawanie-i-odejmowanie-jednomianów">Dodawanie i odejmowanie jednomianów</h2>
+      <hr />
+      <h2>Co to jednomian</h2>
+      <p>Jednomian jest złożony wymnożenia liczb i liter</p>
+      <h3 id="przykład">Przykład</h3>
+      <p>
+        <span class="math display">\[3a\]</span>
+        <span class="math display">\[-2b\]</span>
+        <span class="math display">\[13x\]</span>
+        <span class="math display">\[8y\]</span>
+      </p>
+      <h2>Jak dodawać jednomiany</h2>
+      <p>Jednomiany możemy dodawać i odejmować tylko gdy mają te same literki
+      </p>
+      <h3 id="przykład">Przykład</h3>
+      <p>
+        <span class="math display">\[\color{#008F62}{2a} + \color{red}{3b} + \color{#008F62}{4a} = \color{#008F62}{6a} +
+          \color{red}{3b}\]</span>
+        <span class="math display">\[-2b + 8x +5b -2x = 3b+6x\]</span>
+      </p>
+
+      <h2>Analogia</h2>
+      <p>Zmienne w jednomianach najlepiej traktować jak owoce na przykład
+        <span class="math inline">\(a\)</span> możemy traktować jako ananasy
+        <span class="math inline">\(b\)</span> możemy traktować jako banany.
+        Teraz gdy chcemy dodać <span class="math inline">\(2a+3b+4a\)</span>
+        traktujemy to jako dodanie 2 ananasów 3 bananów i 4 ananasów.
+        Ananasy możemy ze sobą dodać (6 ananasów) a bananów już nie jesteśmy w stanie dodać do ananasów więc wynik
+        wychodzi nam
+        <span class="math inline">\(6a+3b\)</span>
+      </p>
+      <div class="zadania">
+        <hr />
+        <div id="questions_1"></div>
+        <hr>
+      </div>
+      <h2>Bardziej skomplikowane jednomiany</h2>
+      <p>Jednomiany mogą być też bardziej złożone z kilku literek albo nawet podniesione do różnych potęg</p>
+      <h3 id="przykład">Przykład</h3>
+      <p>
+        <span class="math display">\[3ab\]</span>
+        <span class="math display">\[-2abc\]</span>
+        <span class="math display">\[13xy\]</span>
+        <span class="math display">\[8y^2\]</span>
+        <span class="math display">\[4x^3y^2\]</span>
+      </p>
+      <p>Nadal należy je traktować jako jedną całość. 
+        Na przykład \(ab\) możemy traktować jako ananaso-banany, odmienny gatuek owoca.
+        Nadal możemy dodawać ze sobą tylko te same gatunki. Czyli ananaso-banany do ananaso-bananów a zwykłe ananasy do ananasów.
+      </p>
+      <h3 id="przykład">Przykład</h3>
+      <p>
+        <span class="math display">\[3ab + 2ab = 5ab\]</span>
+        <span class="math display">\[3ab + 2ab + 2a +6a = 5ab + 8a\]</span>
+      </p>
+      <div class="zadania">
+        <hr />
+        <div id="questions_2"></div>
+        <hr>
+      </div>
+      <p>Tak samo \(a^3\) traktujemy jako osobny gatunek od \(a^2\) czy zwykłego \(a\)
+      </p>
+      <h3 id="przykład">Przykład</h3>
+      <p>
+        <span class="math display">\[a^3 + 4a^3+9a = 5a^3 + 9a\]</span>
+        <span class="math display">\[2a^3 + 7a^3 + 5a^2 +a^2 + 8a = 9a^3+6a^2 + 8a\]</span>
+      </p>
+      <div class="zadania">
+        <hr />
+        <div id="questions_3"></div>
+        <hr>
+      </div>
+
+
+      <div class="tcolorbox">
+        <div class="boldWord">
+          <p>Uwaga!</p>
+        </div>
+        <p>Wymagamy żeby te literki były dokładnie takie same czyli np.</p>
+        <p><span class="math display">\[a \neq a^2\]</span> <span class="math display">\[xy \neq x^2y \neq xy^2 \neq
+            x^2y^2\]</span> i takich wyrażeń pod żadnym pozorem nie możemy do siebie dodawać ani odejmować!</p>
+      </div>
+      <!--HERE copy latex converted html-->
+      <!--HERE copy latex converted html-->
+      <!--HERE copy latex converted html-->
   </div>
-  
-  
+
+
   <!--Skrypty-->
   <script src="../../js/lessonLoader.js" defer></script>
 
 </body>
+
 </html>
