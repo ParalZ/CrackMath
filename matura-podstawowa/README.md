@@ -22,3 +22,7 @@
 
 body background
 #f0f4ff
+
+variables colors
+#077CC5, #238075, #D32289
+
