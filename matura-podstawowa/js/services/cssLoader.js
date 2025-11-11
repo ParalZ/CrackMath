@@ -7,7 +7,9 @@ const cssLinks = [
     "../../css/components/button.css",
     "../../css/components/math-field.css",
     "../../css/layout/dashboard.css",
-    "../../css/layout/footer.css"
+    "../../css/layout/footer.css",
+    "https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css",
+    "../../css/components/graphs.css"
 ];
 
 function loadCSS(href) {

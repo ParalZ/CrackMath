@@ -22,8 +22,10 @@ const parallelScripts = [
   'https://cdn.jsdelivr.net/npm/dompurify@3.0.2/dist/purify.min.js',
   'https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.min.js',
   "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
+  "https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js",
   '../../js/services/cssLoader.js',
-  '../../js/components/layout.js'
+  '../../js/components/layout.js',
+  "../../js/components/function.js"
 ];
 
 const sequentialScripts = [
@@ -32,7 +34,7 @@ const sequentialScripts = [
   '../../js/utils/autoNumberHeadings.js',  // Defines numberZadaniaHeadings
   '../../js/components/multipleChoice.js',   // Depends on safeHTML
   '../../js/components/openQuestions.js',      // Depends on safeHTML, ComputeEngine
-  '../../js/services/questionLoader.js'      // Depends on multipleChoice & openQuestions
+  '../../js/services/jsonLoader.js'      // Depends on multipleChoice & openQuestions
 ];
 
 const postLoadParallelScripts = [
@@ -47,6 +49,9 @@ const postLoadParallelScripts = [
     await loadDependencies()
     setupLessonConfig()
     await runLessonLogic()
+    if (window.MathJax) {
+      MathJax.typesetPromise();
+    }
     console.log("--- LESSON IS FULLY LOADED AND RUNNING ---");
   }
   catch (error) {
@@ -98,11 +103,12 @@ function setupLessonConfig() {
 }
 
 async function runLessonLogic() {
-  if (window.lessonConfig && window.lessonConfig.questionsJson) {
+  const jsonPath = window.lessonConfig.questionsJson
+  if (window.lessonConfig && jsonPath) {
 
-    console.log(`Loading questions from: ${window.lessonConfig.questionsJson}`);
+    console.log(`Loading questions from: ${jsonPath}`);
 
-    await loadQuestions(window.lessonConfig.questionsJson);
+    await loadQuestions(jsonPath);
 
     numberZadaniaHeadings();
     numberTheoryHeadings();

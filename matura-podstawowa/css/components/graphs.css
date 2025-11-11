@@ -1,0 +1,30 @@
+.controls {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+
+.controls label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="range"] {
+    width: 180px;
+}
+
+.jxgbox {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.graph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

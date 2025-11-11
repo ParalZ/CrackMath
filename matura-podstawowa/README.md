@@ -5,9 +5,10 @@
 ## Getting Started
 
 ## Future Development
-- style button colors and contrast
-- style mathfield better(make the background nicer, hide advanced math inputs if possible)
 - check how compute engine work percisely to make sure correct inputs are getting correct response
+- dodac suwaki do funkcji
+- zmienic id i scope wszystkiego tak zeby id sie zmieniało z kazda dodana funkcją
+- troche pousuwać i dodać console logi tak żeby łatwiej było debugować do całego lesson loader, css loader i json loader i function.js
 
 
 ## Bugs to fix

@@ -1,10 +1,8 @@
 [
     {
-        "type": "open",
-        "containerId": "zadania",
-        "question": "Oblicz $(\\frac{3}{5} + \\frac{2}{5}) : (\\frac{1}{2})$",
-        "latexAnswer": "10",
-        "explanation": "",
-        "maturaInfo": "tutaj jest infor z jakiej to matury"
+        "type": "graph",
+        "containerId": "testDiv",
+        "boundingBox": [-10, 10, 10, -10],
+        "functionBodyString": "x+2"
     }
 ]
