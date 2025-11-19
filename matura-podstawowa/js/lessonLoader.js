@@ -22,10 +22,8 @@ const parallelScripts = [
   'https://cdn.jsdelivr.net/npm/dompurify@3.0.2/dist/purify.min.js',
   'https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.min.js',
   "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
-  "https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js",
   '../../js/services/cssLoader.js',
-  '../../js/components/layout.js',
-  "../../js/components/function.js"
+  '../../js/components/layout.js'
 ];
 
 const sequentialScripts = [

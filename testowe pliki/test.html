@@ -1,82 +1,137 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interaktywny wykres funkcji kwadratowej</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaktywny wykres funkcji kwadratowej</title>
 
-  <!-- JSXGraph (lekka biblioteka do wykresów matematycznych) -->
-  
-  <script src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.6.2/jsxgraph.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.6.2/jsxgraphcore.js"></script>
 
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #fafafa;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 40px;
-    }
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #fafafa;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 40px;
+        }
 
-    h1 {
-      margin-bottom: 10px;
-    }
+        h1 { margin-bottom: 10px; }
 
-    .controls {
-      margin: 20px 0;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      width: 300px;
-    }
+        .controls {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 300px;
+        }
 
-    .controls label {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+        .controls label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-    input[type="range"] {
-      width: 180px;
-    }
+        input[type="range"] { width: 180px; margin-left: 10px; }
+        
+        .val-display { font-weight: bold; width: 40px; text-align: right; }
 
-    #box {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-  </style>
+        #box {
+            width: 500px;
+            height: 400px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+    </style>
 </head>
 
 <body>
-  <h1>Funkcja kwadratowa: f(x) = a·x² + b·x + c</h1>
+    <h1>Funkcja kwadratowa: f(x) = a·x² + b·x + c</h1>
 
-  <div id="box" class="jxgbox" style="width:500px; height:400px;"></div>
+    <div class="controls">
+        <label>
+            a = <span id="a-val" class="val-display">1.0</span>
+            <input id="a" type="range" min="-3" max="3" step="0.1" value="1">
+        </label>
+        <label>
+            b = <span id="b-val" class="val-display">0.0</span>
+            <input id="b" type="range" min="-5" max="5" step="0.1" value="0">
+        </label>
+        <label>
+            c = <span id="c-val" class="val-display">0.0</span>
+            <input id="c" type="range" min="-5" max="5" step="0.1" value="0">
+        </label>
+    </div>
 
-  <script>
-    // Inicjalizacja planszy JSXGraph
-    const board = JXG.JSXGraph.initBoard('box', {
-      axis: true,
-      boundingbox: [-10, 10, 10, -10],
-      showCopyright: false,
-      showNavigation: false
-    });
+    <div id="box" class="jxgbox"></div>
 
-    // Domyślne wartości współczynników
-    let a = 1, b = 0, c = 0;
+    <script>
+        // Ensure the library is loaded before running
+        window.addEventListener('load', function() {
+            
+            // Check if JXG loaded correctly
+            if (typeof JXG === 'undefined') {
+                alert("Błąd: Biblioteka JSXGraph nie załadowała się. Sprawdź połączenie internetowe.");
+                return;
+            }
 
-    // Definicja funkcji kwadratowej
-    const f = (x) => a * x * x + b * x + c;
+            // --- 1. Initialize Board ---
+            const board = JXG.JSXGraph.initBoard('box', {
+                axis: true,
+                boundingbox: [-10, 10, 10, -10],
+                showCopyright: false,
+                showNavigation: false
+            });
 
-    // Rysujemy wykres
-    let curve = board.create('functiongraph', [f], {
-      strokeColor: '#0074D9',
-      strokeWidth: 2
-    });
-  </script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css">
+            // --- 2. Define Variables ---
+            let a = 1.0, b = 0.0, c = 0.0;
+
+            // --- 3. Define Function ---
+            // This function automatically uses the current a, b, c
+            const f = (x) => a * x * x + b * x + c;
+
+            // --- 4. Create Curve ---
+            // We create it ONCE. We do NOT delete it later.
+            let curve = board.create('functiongraph', [f, -10, 10], {
+                strokeColor: '#0074D9',
+                strokeWidth: 3
+            });
+
+            // --- 5. Update Logic ---
+            function updateGraph() {
+                // Read values
+                a = parseFloat(document.getElementById('a').value);
+                b = parseFloat(document.getElementById('b').value);
+                c = parseFloat(document.getElementById('c').value);
+
+                // Update text
+                document.getElementById('a-val').textContent = a.toFixed(1);
+                document.getElementById('b-val').textContent = b.toFixed(1);
+                document.getElementById('c-val').textContent = c.toFixed(1);
+
+                // CRITICAL FIX: Just update the board. 
+                // The function 'f' will be re-calculated automatically.
+                board.update();
+            }
+
+            // Attach listeners
+            ['a', 'b', 'c'].forEach(id => {
+                document.getElementById(id).addEventListener('input', updateGraph);
+            });
+            
+            // Initial run
+            updateGraph();
+        });
+    </script>
 </body>
 </html>

@@ -9,9 +9,6 @@ const questionHandlers = {
       return;
     }
     addMultipleChoiceQuestion(q.containerId, q.question,q.latexAnswer,q.A,q.B,q.C,q.D,q.correctLetter)
-  },
-  graph :function(q){
-    addGraph(q.containerId, q.boundingBox, q.functionBodyString);
   }
 };
 
